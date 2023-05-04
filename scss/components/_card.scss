@@ -1,0 +1,144 @@
+%card {
+    // start card-css-vars
+    --#{$prefix}card-title-color: #{$card-title-color};
+
+    --#{$prefix}card-spacer-y: #{$card-spacer-y};
+    --#{$prefix}card-spacer-x: #{$card-spacer-x};
+
+    --#{$prefix}card-spacer-y-sm: #{$card-spacer-y-sm};
+    --#{$prefix}card-spacer-x-sm: #{$card-spacer-x-sm};
+
+    --#{$prefix}card-spacer-y-md: #{$card-spacer-y-sm};
+    --#{$prefix}card-spacer-x-md: #{$card-spacer-x-sm};
+
+    --#{$prefix}card-spacer-y-lg: #{$card-spacer-y-lg};
+    --#{$prefix}card-spacer-x-lg: #{$card-spacer-x-lg};
+
+    --#{$prefix}card-spacer-y-xl: #{$card-spacer-y-xl};
+    --#{$prefix}card-spacer-x-xl: #{$card-spacer-x-xl};
+
+    --#{$prefix}card-title-spacer-y: #{$card-title-spacer-y};
+
+    --#{$prefix}card-border-radius: #{$card-border-radius};
+    --#{$prefix}card-border-width: #{$card-border-width};
+    --#{$prefix}card-bg: #{$card-bg};
+    --#{$prefix}card-height: #{$card-height};
+    --#{$prefix}card-box-shadow: #{$card-box-shadow};
+    // end card-css-vars
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    color: var(--#{$prefix}body-color);
+    border: var(--#{$prefix}card-border-width) solid
+        var(--#{$prefix}card-border-color);
+    @include border-radius(var(--#{$prefix}card-border-radius));
+}
+%card-sm {
+    padding: var(--#{$prefix}card-spacer-y-sm) var(--#{$prefix}card-spacer-x-sm);
+    flex: 1;
+    min-height: var(--#{$prefix}card-height);
+    &:hover {
+        background: $white;
+        box-shadow: var(--#{$prefix}card-box-shadow);
+        @include border-radius(var(--#{$prefix}card-border-radius));
+    }
+}
+%card-lg {
+    position: relative;
+    flex: 1;
+    padding: var(--#{$prefix}card-spacer-y-lg) var(--#{$prefix}card-spacer-x-lg);
+}
+
+%card-5 {
+    --#{$prefix}card-spacer-y-md: #{$card-spacer-y-sm};
+    --#{$prefix}card-spacer-x-md: #{$card-spacer-x-sm};
+    padding: var(--#{$prefix}card-spacer-y-md) var(--#{$prefix}card-spacer-x-md);
+    @include media-breakpoint-up(xl) {
+        display: flex;
+        flex-basis: 20%;
+    }
+}
+// card rounded
+%card-rounded {
+    border-bottom-left-radius: var(--bs-border-radius);
+    border-top-left-radius: var(--bs-border-radius);
+
+    @include media-breakpoint-down(xl) {
+        border-top-left-radius: var(--bs-border-radius);
+        border-top-right-radius: var(--bs-border-radius);
+        border-bottom-left-radius: 0;
+    }
+}
+
+// card img
+%card-img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+// Card body
+%card-body {
+    flex: 1 1 auto;
+    padding: var(--#{$prefix}card-spacer-y) var(--#{$prefix}card-spacer-x);
+}
+%card-wrap {
+    @include media-breakpoint-up(xl) {
+        padding: var(--#{$prefix}card-spacer-y-xl)
+            var(--#{$prefix}card-spacer-x-xl);
+    }
+    padding: 0 3.2rem;
+}
+%card-text {
+    font-size: var(--#{$prefix}font-size-md);
+    margin-bottom: var(--#{$prefix}card-spacer-y-sm);
+    color: var(--#{$prefix}card-title-color);
+}
+%card-title {
+    margin-bottom: var(--#{$prefix}card-title-spacer-y);
+    color: var(--#{$prefix}card-title-color);
+    @include line-clamp(3);
+}
+%card-link {
+    font-size: 1.5rem;
+}
+//----- Card ----------------------------------------
+
+.#{$class-prefix}card {
+    @extend %card;
+}
+.#{$class-prefix}card-sm {
+    @extend %card-sm;
+}
+.#{$class-prefix}card-lg {
+    @extend %card-lg;
+}
+
+.#{$class-prefix}card-5 {
+    @extend %card-5;
+}
+.#{$class-prefix}card-img {
+    @extend %card-img;
+}
+.#{$class-prefix}card-rounded {
+    @extend %card-rounded;
+}
+.#{$class-prefix}card-body {
+    @extend %card-body;
+}
+.#{$class-prefix}card-wrap {
+    @extend %card-wrap;
+}
+
+.#{$class-prefix}card-title {
+    @extend %card-title;
+}
+.#{$class-prefix}card-text {
+    @extend %card-text;
+}
+.#{$class-prefix}card-link {
+    @extend %card-link;
+}

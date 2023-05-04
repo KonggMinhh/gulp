@@ -1,0 +1,28 @@
+.slider {
+    position: relative;
+    background: url(../../assets/img/slider.png) center / cover no-repeat;
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+    &-heading {
+        font-size: 5.4rem;
+        line-height: 6.5rem;
+    }
+    &-below {
+        margin-top: 6.6rem;
+    }
+}
+
+.icon-video {
+    animation: btnvideo 1s infinite alternate;
+    transition: all 0.5s ease-out;
+}
+@keyframes btnvideo {
+    from {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

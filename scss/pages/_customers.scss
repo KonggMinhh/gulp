@@ -1,0 +1,12 @@
+.customers {
+    padding: 3.2rem 0 6.4rem 0;
+    &-thumb {
+        min-width: 140px;
+        height: 140px;
+        object-fit: cover;
+        @include border-radius(var(--#{$prefix}border-radius));
+    }
+}
+.star-groups i {
+    color: #ffac36;
+}

@@ -1,0 +1,33 @@
+.resolve {
+    padding: 5.2rem 0 2rem 0;
+    &-column {
+        @include media-breakpoint-up(xl) {
+            padding: 4.3rem 4rem 13rem;
+        }
+        padding: 2rem 2rem 13rem;
+    }
+    &-img {
+        margin-bottom: 3.2rem;
+        max-height: 6.2rem;
+        max-width: 100%;
+    }
+    &-list {
+        padding: 0;
+    }
+    &-item {
+        display: flex;
+        align-items: baseline;
+        column-gap: 0.8rem;
+        margin-bottom: 1.2rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+    &-cta {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 3.2rem;
+        max-width: 206px;
+    }
+}

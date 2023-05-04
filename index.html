@@ -1,0 +1,2444 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <title>KioViet</title>
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header fixed-top shadow">
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-xxl bg-white">
+                <div class="container">
+                    <a class="navbar-brand" href="#!">
+                        <img
+                            class="header-logo py-lg"
+                            src="./assets/img/KiotViet-Logo-Horizontal.svg"
+                            alt="KioViet"
+                        />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll"
+                        aria-controls="navbarScroll"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse justify-content-end"
+                        id="navbarScroll"
+                    >
+                        <ul class="navbar-nav me-lg navbar-nav-scroll">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#!">Sản phẩm</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link"
+                                    href="#!"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Giải pháp
+                                </a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Another action</a
+                                        >
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Something else here</a
+                                        >
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Khách hàng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Phí dịch vụ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Hỗ trợ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tin tức</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Về KiotViet</a>
+                            </li>
+                        </ul>
+                        <div class="header-actions">
+                            <button
+                                type="button"
+                                class="bs-btn bs-btn-outline-success bs-btn-md bs-btn-circle"
+                            >
+                                Đăng ký
+                            </button>
+                            <button
+                                type="button"
+                                class="bs-btn bs-btn-success bs-btn-md bs-btn-circle"
+                            >
+                                Đăng nhập
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Slider -->
+        <section class="slider bs-flex-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-24">
+                        <h1 class="slider-heading text-white mb-xl">
+                            Phần mềm<br />quản lý bán hàng<br />
+                            phổ biến nhất
+                        </h1>
+                        <p class="text-white bs-font-h4">
+                            Đơn giản, dễ dùng, tiết kiệm chi phí và phù hợp với
+                            tất cả các ngành hàng
+                        </p>
+                    </div>
+                    <div class="slider-below bs-d-flex">
+                        <div class="slider-below-left me-xxl">
+                            <button
+                                type="button"
+                                class="bs-btn bs-btn-success bs-btn-xxl bs-btn-circle me-md"
+                            >
+                                Dùng thử miễn phí
+                            </button>
+                            <button
+                                type="button"
+                                class="bs-btn bs-btn-ghost-gray bs-btn-xxl bs-btn-circle text-white icon-video"
+                            >
+                                <i
+                                    class="fa-duotone fa-circle-play fa-2xl"
+                                    style="
+                                        --fa-secondary-color: rgba(
+                                            $white,
+                                            0.15
+                                        );
+                                    "
+                                ></i>
+                                Khám phá KiotViet
+                            </button>
+                        </div>
+                        <div class="slider-below-right bs-d-flex">
+                            <div class="bs-flex-center text-primary me-xxl">
+                                <div class="bs-d-flex align-items-baseline">
+                                    <i
+                                        class="fa-regular fa-arrow-trend-up fa-2xl bs-d-flex align-items-baseline"
+                                    >
+                                    </i>
+                                    <div class="bs-d-block bs-font-lg ms-md">
+                                        <b class="bs-d-block">200.000+</b>
+                                        <span class="bs-d-block text-white"
+                                            >Nhà kinh doanh sử dụng</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bs-flex-center text-warning">
+                                <div class="bs-d-flex align-items-baseline">
+                                    <i
+                                        class="fa-regular fa-arrow-trend-up fa-2xl"
+                                    ></i>
+                                    <div class="bs-d-block bs-font-lg ms-md">
+                                        <b class="bs-d-block">10.000+</b>
+                                        <span class="bs-d-block text-white"
+                                            >Nhà kinh doanh mới mỗi tháng</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <main>
+            <!-- Benefit -->
+            <section class="benefit">
+                <div class="container">
+                    <h2 class="text-center mb-3xxl">
+                        KiotViet giúp bạn quản lý dễ dàng, bán hàng hiệu quả
+                    </h2>
+                    <div class="row">
+                        <!-- Item 1 -->
+                        <section class="col-24 col-md-8 col-sm-24 text-center">
+                            <div
+                                class="icon-circle icon-cricle-xxl bg-success-subtle mb-lg"
+                            >
+                                <i
+                                    class="fa-solid fa-mug-saucer text-success fa-2xl"
+                                >
+                                </i>
+                            </div>
+                            <h5 class="">Đơn giản & Dễ sử dụng</h5>
+                            <p class="">
+                                Giao diện đơn giản, thân thiện, thông minh. Nhân
+                                viên chỉ mất 15 phút làm quen để bắt đầu bán
+                                hàng với KiotViet.
+                            </p>
+                        </section>
+                        <!-- Item 2 -->
+                        <section class="col-24 col-md-8 col-sm-24 text-center">
+                            <div
+                                class="icon-circle icon-cricle-xxl bg-warning-subtle mb-lg"
+                            >
+                                <i
+                                    class="fa-solid fa-circle-check fa-2xl text-warning"
+                                ></i>
+                            </div>
+
+                            <h5>Phù hợp cho từng ngành hàng</h5>
+                            <p>
+                                Miễn phí cài đặt, phí triển khai, nâng cấp và hỗ
+                                trợ. Rẻ hơn một ly trà đá, chỉ từ 6.000
+                                đồng/ngày
+                            </p>
+                        </section>
+                        <!-- Item 3 -->
+                        <section class="col-24 col-md-8 col-sm-24 text-center">
+                            <div
+                                class="icon-circle icon-cricle-xxl bg-info-subtle mb-lg"
+                            >
+                                <i
+                                    class="fa-solid fa-pig fa-2xl text-primary"
+                                ></i>
+                            </div>
+                            <h5>Tiết kiệm chi phí tối đa</h5>
+                            <p>
+                                Miễn phí cài đặt, phí triển khai, nâng cấp và hỗ
+                                trợ. Rẻ hơn một ly trà đá, chỉ từ 6.000
+                                đồng/ngày
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </section>
+            <!-- Career -->
+            <section class="career bg-success bg-opacity-10">
+                <div class="container">
+                    <h2 class="text-center mb-3xxl">
+                        Chúng tôi thiết kế phần mềm <br />
+                        chuyên biệt cho từng ngành hàng
+                    </h2>
+                    <div class="row">
+                        <!-- Item 1 -->
+                        <article class="col-12 col-md-8 col-lg-6 bs-card-5">
+                            <a href="#!" class="bs-card bs-card-sm">
+                                <div
+                                    class="icon-circle icon-cricle-xl bg-success-subtle mb-sm"
+                                >
+                                    <i
+                                        class="fa-regular fa-shirt fa-2xl text-success"
+                                    ></i>
+                                </div>
+                                <p class="bs-card-text text-center">
+                                    Thời trang
+                                </p>
+                            </a>
+                        </article>
+                        <!-- Item 2 -->
+                        <article class="col-12 col-md-8 col-lg-6 bs-card-5">
+                            <a href="#!" class="bs-card bs-card-sm">
+                                <div
+                                    class="icon-circle icon-cricle-xl bg-success-subtle mb-sm"
+                                >
+                                    <i
+                                        class="fa-regular fa-utensils fa-2xl text-success"
+                                    ></i>
+                                </div>
+                                <p class="bs-card-text text-center">
+                                    Bar - Cafe & Nhà hàng Karaoke
+                                </p>
+                            </a>
+                        </article>
+                        <!-- Item 3 -->
+                        <article class="col-12 col-md-8 col-lg-6 bs-card-5">
+                            <a href="#!" class="bs-card bs-card-sm">
+                                <div
+                                    class="icon-circle icon-cricle-xl bg-success-subtle mb-sm"
+                                >
+                                    <i
+                                        class="fa-regular fa-cart-shopping fa-2xl text-success"
+                                    ></i>
+                                </div>
+                                <p class="bs-card-text text-center">
+                                    Tạp hóa & Siêu thị mini
+                                </p>
+                            </a>
+                        </article>
+                        <!-- Item 4 -->
+                        <article class="col-12 col-md-8 col-lg-6 bs-card-5">
+                            <a href="#!" class="bs-card bs-card-sm">
+                                <div
+                                    class="icon-circle icon-cricle-xl bg-success-subtle mb-sm"
+                                >
+                                    <i
+                                        class="fa-regular fa-dryer fa-2xl text-success"
+                                    ></i>
+                                </div>
+                                <p class="bs-card-text text-center">
+                                    Điện thoại & Điện máy
+                                </p>
+                            </a>
+                        </article>
+                        <!-- Item 5 -->
+                        <article class="col-12 col-md-8 col-lg-6 bs-card-5">
+                            <a href="#!" class="bs-card bs-card-sm">
+                                <div
+                                    class="icon-circle icon-cricle-xl bg-success-subtle mb-sm"
+                                >
+                                    <i
+                                        class="fa-regular fa-wand-magic-sparkles fa-2xl text-success"
+                                    ></i>
+                                </div>
+                                <p class="bs-card-text text-center">Mỹ phẩm</p>
+                            </a>
+                        </article>
+                        <!-- Item 6 -->
+                        <article class="col-12 col-md-8 col-lg-6 bs-card-5">
+                            <a href="#!" class="bs-card bs-card-sm">
+                                <div
+                                    class="icon-circle icon-cricle-xl bg-success-subtle mb-sm"
+                                >
+                                    <i
+                                        class="fa-regular fa-spa fa-2xl text-success"
+                                    ></i>
+                                </div>
+                                <p class="bs-card-text text-center">
+                                    Hair Salon, Nails, Massage & Spa
+                                </p>
+                            </a>
+                        </article>
+                        <!-- Item 7 -->
+                        <article class="col-12 col-md-8 col-lg-6 bs-card-5">
+                            <a href="#!" class="bs-card bs-card-sm">
+                                <div
+                                    class="icon-circle icon-cricle-xl bg-success-subtle mb-sm"
+                                >
+                                    <i
+                                        class="fa-regular fa-corn fa-2xl text-success"
+                                    ></i>
+                                </div>
+                                <p class="bs-card-text text-center">
+                                    Nông sản & Thực phẩm
+                                </p>
+                            </a>
+                        </article>
+                        <!-- Item 8 -->
+                        <article class="col-12 col-md-8 col-lg-6 bs-card-5">
+                            <a href="#!" class="bs-card bs-card-sm">
+                                <div
+                                    class="icon-circle icon-cricle-xl bg-success-subtle mb-sm"
+                                >
+                                    <i
+                                        class="fa-regular fa-briefcase-medical fa-2xl text-success"
+                                    ></i>
+                                </div>
+                                <p class="bs-card-text text-center">
+                                    Nhà thuốc
+                                </p>
+                            </a>
+                        </article>
+                        <!-- Item 9 -->
+                        <article class="col-12 col-md-8 col-lg-6 bs-card-5">
+                            <a href="#!" class="bs-card bs-card-sm">
+                                <div
+                                    class="icon-circle icon-cricle-xl bg-success-subtle mb-sm"
+                                >
+                                    <i
+                                        class="fa-light fa-paint-roller fa-2xl text-success"
+                                    ></i>
+                                </div>
+                                <p class="bs-card-text text-center">
+                                    Vật liệu xây dựng
+                                </p>
+                            </a>
+                        </article>
+                        <!-- Item 10 -->
+                        <article class="col-12 col-md-8 col-lg-6 bs-card-5">
+                            <a href="#!" class="bs-card bs-card-sm">
+                                <div
+                                    class="icon-circle icon-cricle-xl bg-success-subtle mb-sm"
+                                >
+                                    <i
+                                        class="fa-solid fa-person-biking fa-2xl text-success"
+                                    ></i>
+                                </div>
+                                <p class="bs-card-text text-center">
+                                    Xe, Máy móc & Linh kiện Sửa chữa
+                                </p>
+                            </a>
+                        </article>
+                        <!-- Item 11 -->
+                        <article class="col-12 col-md-8 col-lg-6 bs-card-5">
+                            <a href="#!" class="bs-card bs-card-sm">
+                                <div
+                                    class="icon-circle icon-cricle-xl bg-success-subtle mb-sm"
+                                >
+                                    <i
+                                        class="fa-regular fa-loveseat fa-2xl text-success"
+                                    ></i>
+                                </div>
+                                <p class="bs-card-text text-center">
+                                    Nội thất & Gia dụng
+                                </p>
+                            </a>
+                        </article>
+                        <!-- Item 12 -->
+                        <article class="col-12 col-md-8 col-lg-6 bs-card-5">
+                            <a href="#!" class="bs-card bs-card-sm">
+                                <div
+                                    class="icon-circle icon-cricle-xl bg-success-subtle mb-sm"
+                                >
+                                    <i
+                                        class="fa-solid fa-child-reaching fa-2xl text-success"
+                                    ></i>
+                                </div>
+                                <p class="bs-card-text text-center">Mẹ & Bé</p>
+                            </a>
+                        </article>
+                        <!-- Item 13 -->
+                        <article class="col-12 col-md-8 col-lg-6 bs-card-5">
+                            <a href="#!" class="bs-card bs-card-sm">
+                                <div
+                                    class="icon-circle icon-cricle-xl bg-success-subtle mb-sm"
+                                >
+                                    <i
+                                        class="fa-regular fa-book fa-2xl text-success"
+                                    ></i>
+                                </div>
+                                <p class="bs-card-text text-center">
+                                    Sách & Văn phòng phẩm
+                                </p>
+                            </a>
+                        </article>
+                        <!-- Item 14 -->
+                        <article class="col-12 col-md-8 col-lg-6 bs-card-5">
+                            <a href="#!" class="bs-card bs-card-sm">
+                                <div
+                                    class="icon-circle icon-cricle-xl bg-success-subtle mb-sm"
+                                >
+                                    <i
+                                        class="fa-regular fa-gift fa-2xl text-success"
+                                    ></i>
+                                </div>
+                                <p class="bs-card-text text-center">
+                                    Hoa & Quà tặng
+                                </p>
+                            </a>
+                        </article>
+                        <!-- Item 15 -->
+                        <article class="col-12 col-md-8 col-lg-6 bs-card-5">
+                            <a href="#!" class="bs-card bs-card-sm">
+                                <div
+                                    class="icon-circle icon-cricle-xl bg-success-subtle mb-sm"
+                                >
+                                    <i
+                                        class="fa-regular fa-signs-post fa-2xl text-success"
+                                    ></i>
+                                </div>
+                                <p class="bs-card-text text-center">
+                                    Ngành hàng khác
+                                </p>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+                <!-- Career CTA -->
+                <div class="bs-flex-center mt-3xxl">
+                    <div
+                        class="bs-inline-flex-center rounded-pill bg-success bg-opacity-10"
+                    >
+                        <p class="bs-card-text p-md bs-font-semibold">
+                            10 ngày dùng thử miễn phí
+                        </p>
+                        <button
+                            type="button"
+                            class="bs-btn bs-btn-success bs-btn-lg bs-btn-circle"
+                        >
+                            <i class="fa-regular fa-arrow-right"></i>
+                            Đăng ký ngay
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Resolve -->
+            <section class="resolve">
+                <div class="container">
+                    <h2 class="text-center mb-3xxl">
+                        <b class="text-success">KiotViet</b>
+                        - Giải pháp kinh doanh toàn diện
+                    </h2>
+                    <div class="row">
+                        <!-- Item 1 -->
+                        <div class="col-md-8 col-sm-24 mb-xl bs-d-flex">
+                            <!-- Resolve 1 -->
+                            <article
+                                class="bs-card bs-card-lg resolve-column bg-primary bg-opacity-10"
+                            >
+                                <figure>
+                                    <img
+                                        class="resolve-img"
+                                        src="./assets/img/Kiotviet-Software-Logo-Vertical.svg"
+                                        alt="KioViet-Software"
+                                    />
+                                </figure>
+                                <h3 class="mb-lg">
+                                    Giải pháp thanh toán - Vay vốn uy tín dành
+                                    cho chủ shop
+                                </h3>
+                                <ul class="resolve-list">
+                                    <li class="resolve-item">
+                                        <i
+                                            class="fa-sharp fa-regular fa-check text-success"
+                                        ></i>
+                                        <span class="resolve-link">
+                                            Đơn giản quản lý hàng hóa, nhân sự
+                                        </span>
+                                    </li>
+                                    <li class="resolve-item">
+                                        <i
+                                            class="fa-sharp fa-regular fa-check text-success"
+                                        ></i>
+                                        <span class="resolve-link">
+                                            Dễ dàng truy cập báo cáo, theo dõi
+                                            tăng trưởng doanh thu
+                                        </span>
+                                    </li>
+                                    <li class="resolve-item">
+                                        <i
+                                            class="fa-sharp fa-regular fa-check text-success"
+                                        ></i>
+                                        <span class="resolve-link">
+                                            Tối ưu quản lý bán hàng đa kênh
+                                        </span>
+                                    </li>
+                                    <li class="resolve-item">
+                                        <i
+                                            class="fa-sharp fa-regular fa-check text-success"
+                                        ></i>
+                                        <span class="resolve-link">
+                                            Nâng cao chất lượng vận hành
+                                        </span>
+                                    </li>
+                                </ul>
+                                <a
+                                    href="#!"
+                                    class="bs-btn bs-btn-success bs-btn-xxl bs-btn-circle resolve-cta"
+                                    >Xem phí dịch vụ</a
+                                >
+                            </article>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="col-md-8 col-sm-24 mb-xl bs-d-flex">
+                            <!-- Resolve 2 -->
+                            <article
+                                class="bs-card bs-card-lg resolve-column bg-primary bg-opacity-10"
+                            >
+                                <firgue>
+                                    <img
+                                        class="resolve-img"
+                                        src="./assets/img/Kiotviet-Connect-Logo-Vertical.svg"
+                                        alt="KioViet-Connect"
+                                    />
+                                </firgue>
+                                <h3 class="mb-lg">
+                                    Sàn kết nối nguồn hàng giá tốt dành cho nhà
+                                    bán hàng
+                                </h3>
+                                <ul class="resolve-list">
+                                    <li class="resolve-item">
+                                        <i
+                                            class="fa-sharp fa-regular fa-check text-success"
+                                        ></i>
+                                        <span class="resolve-link">
+                                            Nhà bán hàng tìm kiếm nguồn hàng với
+                                            hơn 1000 Nhà cung cấp và nhãn hàng
+                                            uy tín trên thị trường
+                                        </span>
+                                    </li>
+                                    <li class="resolve-item">
+                                        <i
+                                            class="fa-sharp fa-regular fa-check text-success"
+                                        ></i>
+                                        <span class="resolve-link">
+                                            Nhà Cung Cấp tìm kiếm đại lý phân
+                                            phối dễ dàng với chi phí hiệu quả
+                                        </span>
+                                    </li>
+                                </ul>
+                                <a
+                                    href="#!"
+                                    class="bs-btn bs-btn-success bs-btn-xxl bs-btn-circle resolve-cta"
+                                    >Tìm hiểu thêm</a
+                                >
+                            </article>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="col-md-8 col-sm-24 mb-xl bs-d-flex">
+                            <!-- Resolve 3 -->
+                            <article
+                                class="bs-card bs-card-lg resolve-column bg-primary bg-opacity-10"
+                            >
+                                <figure>
+                                    <img
+                                        class="resolve-img"
+                                        src="./assets/img/Kiotviet-Finance-Logo-Vertical.svg"
+                                        alt="KioViet-Finance"
+                                    />
+                                </figure>
+                                <h3 class="mb-lg">
+                                    Giải pháp thanh toán - Vay vốn uy tín dành
+                                    cho chủ shop
+                                </h3>
+                                <ul class="resolve-list">
+                                    <li class="resolve-item">
+                                        <i
+                                            class="fa-sharp fa-regular fa-check text-success"
+                                        ></i>
+                                        <span class="resolve-link">
+                                            Tích hợp thanh toán QR
+                                        </span>
+                                    </li>
+                                    <li class="resolve-item">
+                                        <i
+                                            class="fa-sharp fa-regular fa-check text-success"
+                                        ></i>
+                                        <span class="resolve-link">
+                                            Hỗ trợ vay vốn từ các đối tác tài
+                                            chính uy tín (KBank, Easy Credit...)
+                                        </span>
+                                    </li>
+                                </ul>
+                                <a
+                                    href="#!"
+                                    class="bs-btn bs-btn-success bs-btn-xxl bs-btn-circle resolve-cta"
+                                    >Liên hệ tư vấn</a
+                                >
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Solution -->
+            <section class="solution">
+                <div class="container">
+                    <h2 class="text-center mb-3xxl">
+                        <strong class="text-success">Giải pháp</strong>
+                        Bán hàng online hiệu quả
+                    </h2>
+                    <div class="row justify-content-center">
+                        <div class="col-24 col-xl-20 solution__list">
+                            <!-- Solution 1 -->
+                            <article
+                                class="bs-card bg-success bg-opacity-10 mb-3xxl"
+                            >
+                                <div class="row m-none">
+                                    <div class="col-xl-8 p-none">
+                                        <a href="#!">
+                                            <figure
+                                                class="bs-card-img bs-card-rounded bg-success-subtle p-lg"
+                                            >
+                                                <img
+                                                    class="solution-thumb"
+                                                    src="./assets/img/solution-1.png"
+                                                    alt="Solution"
+                                                />
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="col-xl-16 bs-flex-center p-none"
+                                    >
+                                        <div
+                                            class="bs-card-body bs-card-wrap card-content"
+                                        >
+                                            <h3 class="bs-card-title">
+                                                Đồng bộ với các Sàn thương mại
+                                                điện tử
+                                            </h3>
+                                            <p class="bs-card-text">
+                                                KiotViet đem đến giải pháp quản
+                                                lý bán hàng dễ dàng & hiệu quả
+                                                trên các sàn TMĐT phổ biến nhất
+                                                hiện nay như Tiki, Shopee,
+                                                Lazada, Sendo... Quản lý tập
+                                                trung nhiều gian hàng trên một
+                                                giao diện, tự động đồng bộ tồn
+                                                kho - giá bán, tiết kiệm thời
+                                                gian, đơn đi bạt ngàn.
+                                            </p>
+                                            <a
+                                                href="#!"
+                                                class="bs-card-link text-success"
+                                                >Xem chi tiết
+                                                <i
+                                                    class="fa-regular fa-arrow-right ms-sm"
+                                                >
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Solution 2 -->
+                            <article
+                                class="bs-card bg-primary bg-opacity-10 mb-3xxl"
+                            >
+                                <div class="row m-none flex-row-reverse">
+                                    <div class="col-xl-8 p-none">
+                                        <a href="#!">
+                                            <figure
+                                                class="bs-card-img bs-card-rounded bg-primary-subtle p-lg"
+                                            >
+                                                <img
+                                                    class="solution-thumb"
+                                                    src="./assets/img/solution-2.png"
+                                                    alt="Solution"
+                                                />
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="col-xl-16 bs-flex-center p-none"
+                                    >
+                                        <div
+                                            class="bs-card-body bs-card-wrap card-content"
+                                        >
+                                            <h3 class="bs-card-title">
+                                                Tạo website bán hàng trong 5
+                                                phút
+                                            </h3>
+                                            <p class="bs-card-text">
+                                                Chỉ với 5 phút bán hàng, bạn đã
+                                                có thể tạo ra một website bán
+                                                hàng với nhiều giao diện phù hợp
+                                                và bắt mắt. Mykiot giúp bạn có
+                                                thêm một giải pháp bán hàng
+                                                thương mại điện tử thật dễ dàng
+                                                và đơn giản chỉ với 100K/tháng.
+                                            </p>
+                                            <a
+                                                href="#!"
+                                                class="bs-card-link text-success"
+                                                >Xem chi tiết
+                                                <i
+                                                    class="fa-regular fa-arrow-right ms-sm"
+                                                ></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Solution 3 -->
+                            <article
+                                class="bs-card bg-danger bg-opacity-10 mb-3xxl"
+                            >
+                                <div class="row m-none">
+                                    <div class="col-xl-8 p-none">
+                                        <a href="#!">
+                                            <figure
+                                                class="bs-card-img bs-card-rounded bg-danger-subtle p-lg"
+                                            >
+                                                <img
+                                                    class="solution-thumb"
+                                                    src="./assets/img/solution-3.png"
+                                                    alt="Solution"
+                                                />
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="col-xl-16 bs-flex-center p-none"
+                                    >
+                                        <div
+                                            class="bs-card-body bs-card-wrap card-content"
+                                        >
+                                            <h3 class="bs-card-title">
+                                                Liên kết quản lý bán hàng trên
+                                                Facebook
+                                            </h3>
+                                            <p class="bs-card-text">
+                                                KiotViet cung cấp giải pháp quản
+                                                lý & bán hàng trên Fanpage
+                                                Facebook tiện lợi và nhanh
+                                                chóng, đáp ứng đầy đủ nhu cầu
+                                                của hàng triệu chủ shop kinh
+                                                doanh online thuộc tất cả mọi
+                                                ngành hàng.
+                                            </p>
+                                            <a
+                                                href="#!"
+                                                class="bs-card-link text-success"
+                                                >Xem chi tiết
+                                                <i
+                                                    class="fa-regular fa-arrow-right ms-sm"
+                                                >
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Solution 4 -->
+                            <article
+                                class="bs-card bg-warning bg-opacity-10 mb-3xxl"
+                            >
+                                <div class="row m-none flex-row-reverse">
+                                    <div class="col-xl-8 p-none">
+                                        <a href="#!">
+                                            <figure
+                                                class="bs-card-img bs-card-rounded bg-warning-subtle p-lg"
+                                            >
+                                                <img
+                                                    class="solution-thumb"
+                                                    src="./assets/img/solution-4.png"
+                                                    alt="Solution"
+                                                />
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="col-xl-16 bs-flex-center p-none"
+                                    >
+                                        <div
+                                            class="bs-card-body bs-card-wrap card-content"
+                                        >
+                                            <h3 class="bs-card-title">
+                                                Giải pháp giao hàng dễ dàng
+                                            </h3>
+                                            <p class="bs-card-text">
+                                                Tích hợp vận chuyển với hầu hết
+                                                các hãng vận chuyển trên thị
+                                                trường như Giaohangnhanh,
+                                                ViettelPost, VNPT Post, J&T…
+                                                KiotShip mang lại cho khách hàng
+                                                một dịch vụ hoàn hảo và chi phí
+                                                vô cùng tiết kiệm với nhiều
+                                                chính sách ưu đãi của các hãng
+                                                vận chuyển.
+                                            </p>
+                                            <a
+                                                href="#!"
+                                                class="bs-card-link text-success"
+                                                >Xem chi tiết
+                                                <i
+                                                    class="fa-regular fa-arrow-right ms-sm"
+                                                ></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Customers -->
+            <section class="customers">
+                <div class="container">
+                    <h2 class="text-center mb-3xxl">
+                        Khách hàng của chúng tôi
+                    </h2>
+                    <div class="row">
+                        <!-- Customers Item 1 -->
+                        <div class="col-xl-8 col-lg-12">
+                            <article class="bs-card mb-xxl">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <a href="#!">
+                                            <figure class="bs-card-img">
+                                                <img
+                                                    src="./assets/img/customers-1.png"
+                                                    alt="customers"
+                                                    class="customers-thumb"
+                                                />
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="col-16">
+                                        <div class="bs-card-body">
+                                            <h4 class="bs-card-title mb-sm">
+                                                HíuSunglasses Phong cách là mãi
+                                                mãi - Forever
+                                            </h4>
+                                            <p class="bs-card-text">
+                                                Tầng 3, số 2, Ngõ 10, Nguyễn Văn
+                                                Huyên, Cầu Giấy, Hà Nội
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Customers Item 2 -->
+                        <div class="col-xl-8 col-lg-12">
+                            <article class="bs-card mb-xxl">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <a href="#!">
+                                            <figure class="bs-card-img">
+                                                <img
+                                                    src="./assets/img/customers-2.png"
+                                                    alt="customers"
+                                                    class="customers-thumb"
+                                                />
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="col-16">
+                                        <div class="bs-card-body">
+                                            <h4 class="bs-card-title mb-sm">
+                                                Cửa hàng Minh Tuấn MOBILE –
+                                                Chinh phục khách hàng bằng cái
+                                                tâm
+                                            </h4>
+                                            <p class="bs-card-text">
+                                                450E Điện Biên Phủ - P. 21, Quận
+                                                Bình Thạnh, thành phố Hồ Chí
+                                                Minh
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Customers Item 3 -->
+                        <div class="col-xl-8 col-lg-12">
+                            <article class="card mb-xxl">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <a href="#!">
+                                            <figure class="bs-card-img">
+                                                <img
+                                                    src="./assets/img/customers-3.png"
+                                                    alt="customers"
+                                                    class="customers-thumb"
+                                                />
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="col-16">
+                                        <div class="bs-card-body">
+                                            <h4 class="bs-card-title mb-sm">
+                                                CHANH COSMETIC BOX
+                                            </h4>
+                                            <p class="bs-card-text">
+                                                220 Nguyễn Văn Cừ, Tp Vinh, tỉnh
+                                                Nghệ An
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Customers Item 4 -->
+                        <div class="col-xl-8 col-lg-12">
+                            <article class="card mb-xxl">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <a href="#!">
+                                            <figure class="bs-card-img">
+                                                <img
+                                                    src="./assets/img/customers-4.png"
+                                                    alt="customers"
+                                                    class="customers-thumb"
+                                                />
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="col-16">
+                                        <div class="bs-card-body">
+                                            <h4 class="bs-card-title mb-sm">
+                                                HíuSunglasses Phong cách là mãi
+                                                mãi - Forever
+                                            </h4>
+                                            <p class="bs-card-text">
+                                                Tầng 3, số 2, Ngõ 10, Nguyễn Văn
+                                                Huyên, Cầu Giấy, Hà Nội
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Customers Item 5 -->
+                        <div class="col-xl-8 col-lg-12">
+                            <article class="card mb-xxl">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <a href="#!">
+                                            <figure class="bs-card-img">
+                                                <img
+                                                    src="./assets/img/customers-5.png"
+                                                    alt="customers"
+                                                    class="customers-thumb"
+                                                />
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="col-16">
+                                        <div class="bs-card-body">
+                                            <h4 class="bs-card-title mb-sm">
+                                                HíuSunglasses Phong cách là mãi
+                                                mãi - Forever
+                                            </h4>
+                                            <p class="bs-card-text">
+                                                Tầng 3, số 2, Ngõ 10, Nguyễn Văn
+                                                Huyên, Cầu Giấy, Hà Nội
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Customers Item 6 -->
+                        <div class="col-xl-8 col-lg-12">
+                            <article class="card mb-xxl">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <a href="#!">
+                                            <figure class="bs-card-img">
+                                                <img
+                                                    src="./assets/img/customers-6.png"
+                                                    alt="customers"
+                                                    class="customers-thumb"
+                                                />
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="col-16">
+                                        <div class="bs-card-body">
+                                            <h4 class="bs-card-title mb-sm">
+                                                HíuSunglasses Phong cách là mãi
+                                                mãi - Forever
+                                            </h4>
+                                            <p class="bs-card-text">
+                                                Tầng 3, số 2, Ngõ 10, Nguyễn Văn
+                                                Huyên, Cầu Giấy, Hà Nội
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="text-center mt-8">
+                        <a
+                            href="#!"
+                            class="bs-btn bs-btn-outline-success bs-btn-xxl bs-btn-circle"
+                            >Tất cả khách hàng</a
+                        >
+                    </div>
+                </div>
+            </section>
+            <!-- Social -->
+            <section class="social bg-success bg-opacity-10">
+                <div class="container">
+                    <h2 class="text-center mb-3xxl">
+                        Trải nghiệm ứng dụng KiotViet trên <br />GooglePlay &
+                        Appstore
+                    </h2>
+                    <div class="row bs-flex-center">
+                        <div class="col-lg-24">
+                            <div class="bs-flex-center social-list">
+                                <!-- Social Item 1 -->
+                                <article
+                                    class="col-12 col-sm-6 col-md-4 social-item"
+                                >
+                                    <div class="bs-card bs-flex-center">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/ban_hang.png"
+                                                alt="social"
+                                                class="social-thumb"
+                                            />
+                                        </a>
+                                        <a href="#!">
+                                            <div
+                                                class="bs-card-body text-center"
+                                            >
+                                                <p class="bs-card-text mb-sm">
+                                                    Bán hàng
+                                                </p>
+                                                <div class="star-groups">
+                                                    <i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </article>
+                                <!-- Social Item 2 -->
+                                <article
+                                    class="col-12 col-sm-6 col-md-4 social-item"
+                                >
+                                    <div class="bs-card bs-flex-center">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/quan_ly.png"
+                                                alt="social"
+                                                class="social-thumb"
+                                            />
+                                        </a>
+                                        <a href="#!">
+                                            <div class="card-body text-center">
+                                                <p class="bs-card-text mb-sm">
+                                                    Quản lý
+                                                </p>
+                                                <div class="star-groups">
+                                                    <i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </article>
+                                <!-- Social Item 3 -->
+                                <article
+                                    class="col-12 col-sm-6 col-md-4 social-item"
+                                >
+                                    <div class="bs-card bs-flex-center">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/salon.png"
+                                                alt="social"
+                                                class="social-thumb"
+                                            />
+                                        </a>
+                                        <a href="#!">
+                                            <div
+                                                class="bs-card-body text-center"
+                                            >
+                                                <p class="bs-card-text mb-sm">
+                                                    Salon
+                                                </p>
+                                                <div class="star-groups">
+                                                    <i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </article>
+                                <!-- Social Item QR -->
+                                <article class="bs-card social-item">
+                                    <div class="social-qr">
+                                        <img
+                                            src="./assets/img/qr.png"
+                                            alt="qr"
+                                            class="img-qr"
+                                        />
+                                    </div>
+                                    <p
+                                        class="bs-card-text text-center text-nowrap"
+                                    >
+                                        Quét mã để tải ứng dụng
+                                    </p>
+                                </article>
+                                <!-- Social Item 5-->
+                                <article
+                                    class="col-12 col-sm-6 col-md-4 social-item"
+                                >
+                                    <div class="bs-card bs-flex-center">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/hotel.png"
+                                                alt="social"
+                                                class="social-thumb"
+                                            />
+                                        </a>
+                                        <a href="#!">
+                                            <div
+                                                class="bs-card-body text-center"
+                                            >
+                                                <p class="bs-card-text mb-sm">
+                                                    Hotel
+                                                </p>
+                                                <div class="star-groups">
+                                                    <i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </article>
+                                <!-- Social Item 6-->
+                                <article
+                                    class="col-12 col-sm-6 col-md-4 social-item"
+                                >
+                                    <div class="bs-card bs-flex-center">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/ql_nha_hang.png"
+                                                alt="social"
+                                                class="social-thumb"
+                                            />
+                                        </a>
+                                        <a href="#!">
+                                            <div
+                                                class="bs-card-body text-center"
+                                            >
+                                                <p class="bs-card-text mb-sm">
+                                                    Quản lý nhà hàng
+                                                </p>
+                                                <div class="star-groups">
+                                                    <i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </article>
+                                <!-- Social Item 7-->
+                                <article
+                                    class="col-12 col-sm-6 col-md-4 social-item"
+                                >
+                                    <div class="bs-card bs-flex-center">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/cafe_nha_hang.png"
+                                                alt="social"
+                                                class="social-thumb"
+                                            />
+                                        </a>
+                                        <a href="#!">
+                                            <div
+                                                class="bs-card-body text-center"
+                                            >
+                                                <p class="bs-card-text mb-sm">
+                                                    Café Nhà hàng
+                                                </p>
+                                                <div class="star-groups">
+                                                    <i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i
+                                                    ><i
+                                                        class="fa-solid fa-star fa-xl"
+                                                    ></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Blog -->
+            <section class="blog">
+                <div class="container">
+                    <!-- Blog -->
+                    <h2 class="text-center mb-xxl">Tin tức nổi bật</h2>
+                    <div class="row">
+                        <!-- Blog list left -->
+                        <div class="col-lg-16">
+                            <div class="row">
+                                <!-- Blog Item 1 -->
+                                <article class="col-sm-24 col-lg-12 col-md-12">
+                                    <div class="bs-card">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/blog-1.png"
+                                                alt="blog"
+                                                class="bs-card-img rounded mb-xl"
+                                            />
+                                        </a>
+                                        <div class="bs-card-body">
+                                            <h3 class="bs-card-title">
+                                                KiotViet ra mắt phiên bản mới:
+                                                Phần mềm quản lý dành riêng cho
+                                                Hair salon, Nails Massage & Spa
+                                            </h3>
+                                            <p class="bs-card-text">
+                                                Phần mềm quản lý bán hàng
+                                                KiotViet vừa cho ra mắt phiên
+                                                bản màn hình bán hàng mới gồm 3
+                                                Lorem ipsum dolor sit, amet
+                                                consectetur adipisicing elit.
+                                                Ex, reprehenderit.
+                                            </p>
+                                            <p class="text-gray">
+                                                24 tháng 11, 2021
+                                            </p>
+                                            <a href="#!" class="bs-card-link"
+                                                >Xem thêm</a
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- Blog Item 2 -->
+                                <article class="col-sm-24 col-lg-12 col-md-12">
+                                    <div class="bs-card">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/blog-2.png"
+                                                alt="blog"
+                                                class="bs-card-img rounded mb-xl"
+                                            />
+                                        </a>
+                                        <div class="card-body">
+                                            <h3 class="card-title">
+                                                Phần mềm quản lý bán hàng
+                                                KiotViet gọi vốn thành công 45
+                                                triệu USD
+                                            </h3>
+                                            <p class="bs-card-text">
+                                                Phần mềm quản lý bán hàng
+                                                KiotViet vừa công bố chính thức
+                                                gọi vốn vòng Series B thành công
+                                                với Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Error, similique!
+                                            </p>
+                                            <p class="text-gray">
+                                                24 tháng 11, 2021
+                                            </p>
+                                            <a href="#!" class="bs-card-link"
+                                                >Xem thêm</a
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- Blog list right -->
+                        <div class="col-lg-8">
+                            <!-- Blog Item 3 -->
+                            <article class="bs-card mb-3">
+                                <div class="row">
+                                    <div class="col-10 p-none">
+                                        <a href="#!" class="">
+                                            <img
+                                                src="./assets/img/blog-3.png"
+                                                alt="blog"
+                                                class="bs-card-img rounded mb-xl blog-thumb"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="col-14">
+                                        <h4 class="bs-card-title">
+                                            KiotViet ra mắt phiên bản phần mềm
+                                            FnB hoàn toàn mới: Công nghệ khác
+                                            biệt - Trải nghiệm mượt mà
+                                        </h4>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Blog Item 4 -->
+                            <article class="bs-card">
+                                <div class="row">
+                                    <div class="col-10 p-none">
+                                        <a href="#!" class="">
+                                            <img
+                                                src="./assets/img/blog-4.png"
+                                                alt="blog"
+                                                class="bs-card-img rounded mb-xl blog-thumb"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="col-14">
+                                        <h4 class="bs-card-title">
+                                            KiotViet tặng ngay máy bán hàng cảm
+                                            ứng 8.500.000đ - Giúp chủ quán tăng
+                                            chất lượng phục vụ mùa cao điểm
+                                        </h4>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Blog Item 5 -->
+                            <article class="bs-card mb-3">
+                                <div class="row">
+                                    <div class="col-10 p-none">
+                                        <a href="#!" class="">
+                                            <img
+                                                src="./assets/img/blog-5.png"
+                                                alt="blog"
+                                                class="bs-card-img rounded mb-xl blog-thumb"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="col-14">
+                                        <h4 class="bs-card-title">
+                                            KiotViet ra mắt phiên bản mới: Phần
+                                            mềm quản lý dành riêng cho Hair
+                                            salon, Nails Massage & Spa
+                                        </h4>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Blog Item 6-->
+                            <article class="bs-card mb-3">
+                                <div class="row">
+                                    <div class="col-10 p-none">
+                                        <a href="#!" class="">
+                                            <img
+                                                src="./assets/img/blog-6.png"
+                                                alt="blog"
+                                                class="bs-card-img rounded mb-xl blog-thumb"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="col-14">
+                                        <h4 class="bs-card-title">
+                                            Phần mềm quản lý bán hàng KiotViet
+                                            gọi vốn thành công 45 triệu USD
+                                        </h4>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <!-- News -->
+                    <section class="news rounded bg-gray bg-opacity-10">
+                        <h3 class="text-center mb-3xxl">
+                            Báo chí viết về KiotViet
+                        </h3>
+                        <div class="row justify-content-center">
+                            <div class="col-20">
+                                <div class="bs-flex-center">
+                                    <div class="row">
+                                        <!-- New item  1 -->
+                                        <article class="col-12 col-md-4">
+                                            <a href="">
+                                                <img
+                                                    src="./assets/img/news-1.png"
+                                                    alt="News"
+                                                />
+                                            </a>
+                                        </article>
+                                        <!-- New item  2 -->
+                                        <article class="col-12 col-md-4">
+                                            <a href="">
+                                                <img
+                                                    src="./assets/img/news-2.png"
+                                                    alt="News"
+                                                />
+                                            </a>
+                                        </article>
+                                        <!-- New item  3 -->
+                                        <article class="col-12 col-md-4">
+                                            <a href="">
+                                                <img
+                                                    src="./assets/img/news-3.png"
+                                                    alt="News"
+                                                />
+                                            </a>
+                                        </article>
+                                        <!-- New item  4 -->
+                                        <article class="col-12 col-md-4">
+                                            <a href="">
+                                                <img
+                                                    src="./assets/img/news-4.png"
+                                                    alt="News"
+                                                />
+                                            </a>
+                                        </article>
+                                        <!-- New item  5 -->
+                                        <article class="col-12 col-md-4">
+                                            <a href="">
+                                                <img
+                                                    src="./assets/img/news-5.png"
+                                                    alt="News"
+                                                />
+                                            </a>
+                                        </article>
+                                        <!-- New item  6 -->
+                                        <article class="col-12 col-md-4">
+                                            <a href="">
+                                                <img
+                                                    src="./assets/img/news-6.png"
+                                                    alt="News"
+                                                />
+                                            </a>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <!-- Support -->
+            <section class="support bg-gray bg-opacity-10">
+                <div class="container">
+                    <h2 class="text-center mb-lg">
+                        Hãy để KiotViet đồng hành kinh doanh cùng bạn
+                    </h2>
+                    <div class="text-center">
+                        <button
+                            type="button"
+                            class="bs-btn bs-btn-success bs-btn-xl bs-btn-xxl bs-btn-circle"
+                        >
+                            Dùng thử miễn phí
+                        </button>
+                    </div>
+                    <div class="row mt-xl">
+                        <div class="col-lg-6 col-md-12 bs-d-flex">
+                            <!-- Item 1 -->
+                            <article class="bs-card bg-white">
+                                <div class="bs-card-body p-xl">
+                                    <div class="bs-d-flex align-items-center">
+                                        <i
+                                            class="fa-solid fa-phone-rotary fa-2xl me-md text-success"
+                                        ></i>
+                                        <h6 class="card-title m-none">
+                                            Hotline
+                                        </h6>
+                                    </div>
+                                    <p class="bs-card-text">
+                                        Tư vấn bán hàng:
+                                        <a
+                                            class="text-success"
+                                            href="tel:+1800 6162"
+                                            >1800 6162</a
+                                        >
+                                        <br />
+                                        Chăm sóc KH:
+                                        <a
+                                            class="text-success"
+                                            href="tel:+1900 6522"
+                                            >1900 6522</a
+                                        >
+                                        <br />
+                                        Hoạt động 365 ngày/năm từ 7:00 đến 22:00
+                                        kể cả ngày nghỉ lễ tết.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-6 col-md-12 bs-d-flex">
+                            <!-- Item 2 -->
+                            <article class="bs-card bg-white">
+                                <div class="bs-card-body p-xl">
+                                    <div class="bs-d-flex align-items-center">
+                                        <i
+                                            class="fa-solid fa-message-dots fa-2xl me-md text-success"
+                                        ></i>
+                                        <h6 class="card-title m-none">
+                                            KiotViet Fanpage
+                                        </h6>
+                                    </div>
+                                    <p class="bs-card-text">
+                                        Luôn trả lời các thông tin nhanh nhất
+                                        các bạn thông qua các phản hồi trên
+                                        Facebook.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-6 col-md-12 bs-d-flex">
+                            <!-- Item 3 -->
+                            <article class="bs-card bg-white">
+                                <div class="bs-card-body p-xl">
+                                    <div class="bs-d-flex align-items-center">
+                                        <i
+                                            class="fa-brands fa-youtube fa-2xl me-md text-success"
+                                        ></i>
+                                        <h6 class="card-title m-none">
+                                            Kênh hỗ trợ Youtube
+                                        </h6>
+                                    </div>
+                                    <p class="bs-card-text">
+                                        Luôn cập nhật các kiến thức sử dụng phần
+                                        mềm tức thời, trực quan giúp người dùng
+                                        sử dụng được KiotViet dễ dàng và hiệu
+                                        quả nhất.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-6 col-md-12 bs-d-flex">
+                            <!-- Item 4 -->
+                            <article class="bs-card bg-white">
+                                <div class="bs-card-body p-xl">
+                                    <div class="bs-d-flex align-items-center">
+                                        <i
+                                            class="fa-solid fa-comments fa-2xl me-md text-success"
+                                        ></i>
+                                        <h6 class="bs-card-title m-none">
+                                            Chat với KiotViet
+                                        </h6>
+                                    </div>
+                                    <p class="bs-card-text">
+                                        Luôn có người trực chat để trả lời câu
+                                        hỏi của các bạn nhanh và hiệu quả nhất
+                                        suốt 365 ngày/năm.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer footer-shadow">
+            <div class="container position-relative">
+                <!-- Footer top -->
+                <div class="row">
+                    <!-- Footer Item 1 -->
+                    <div class="col-lg-6 col-md-12">
+                        <h4 class="text-success">Doanh nghiệp</h4>
+                        <ul class="nav bs-d-block">
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link px-none"
+                                    >Về chúng tôi</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link px-none"
+                                    >Khách hàng</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link px-none"
+                                    >Điều khoản sử dụng</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link px-none"
+                                    >Chính sách bảo mật</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link px-none"
+                                    >Liên hệ</a
+                                >
+                            </li>
+                            <li
+                                class="nav-item text-white bs-d-flex align-items-center bs-font-md"
+                            >
+                                Email:
+                                <a
+                                    class="nav-link"
+                                    href="mailto: hotro@kiotviet.com"
+                                >
+                                    hotro@kiotviet.com</a
+                                >
+                            </li>
+                        </ul>
+                        <h5 class="text-success mt-md mb-none">
+                            Tư vấn bán hàng
+                        </h5>
+                        <a
+                            class="bs-d-inline-flex nav-link nav-link-phone"
+                            href="tel:+18006162"
+                            >18006162</a
+                        >
+                    </div>
+                    <!-- Footer Item 2 -->
+                    <div class="col-lg-6 col-md-12">
+                        <h4 class="text-success">Hỗ trợ</h4>
+                        <ul class="nav bs-d-block">
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link px-none"
+                                    >Video hướng dẫn sử dụng</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link px-none"
+                                    >Câu hỏi thường gặp</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link px-none"
+                                    >Wiki KiotViet</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link px-none"
+                                    >Hướng dẫn sử dụng</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link px-none">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link px-none"
+                                    >Thông tin cập nhật Kiotviet</a
+                                >
+                            </li>
+                        </ul>
+                        <h5 class="mb-none mt-md text-success">
+                            Chăm sóc khách hàng
+                        </h5>
+                        <a
+                            class="bs-d-inline-flex nav-link nav-link-phone"
+                            href="tel:+19006522"
+                            >19006522</a
+                        >
+                    </div>
+                    <!-- Footer Item 3 & 4 -->
+                    <div class="col-lg-12">
+                        <h4 class="text-success">Ngành hàng</h4>
+                        <div class="row">
+                            <!-- Footer Item 3 -->
+                            <div class="col-lg-12">
+                                <ul class="nav bs-d-block">
+                                    <li class="nav-item">
+                                        <a href="#!" class="nav-link px-none"
+                                            >Thời trang</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#!" class="nav-link px-none"
+                                            >Bar - Cafe, Nhà hàng Karaoke &
+                                            Billiards</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#!" class="nav-link px-none"
+                                            >Tạp hóa & Siêu thị mini</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#!" class="nav-link px-none"
+                                            >Điện thoại & Điện máy</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#!" class="nav-link px-none"
+                                            >Blog</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#!" class="nav-link px-none"
+                                            >Nội thất & Gia dụng</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#!" class="nav-link px-none"
+                                            >Nhà thuốc</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#!" class="nav-link px-none"
+                                            >Mỹ phẩm</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Footer 4   -->
+                            <div class="col-lg-12">
+                                <ul class="nav bs-d-block">
+                                    <li class="nav-item">
+                                        <a href="#!" class="nav-link px-none"
+                                            >Nông sản & Thực phẩm</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#!" class="nav-link px-none"
+                                            >Vật liệu xây dựng</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#!" class="nav-link px-none"
+                                            >Xe, Máy móc & Linh kiện sửa chữa</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#!" class="nav-link px-none"
+                                            >Mẹ & Bé</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#!" class="nav-link px-none"
+                                            >Hoa & Quà tặng</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#!" class="nav-link px-none"
+                                            >Sách & Văn phòng phẩm</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#!" class="nav-link px-none"
+                                            >Ngành hàng khác
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer second -->
+                <div class="nav-item">
+                    <h4 class="text-success">Địa chỉ Miền Bắc</h4>
+                    <div class="row">
+                        <!-- Footer Address 1 -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Hà Nội:</li>
+                                <li class="nav-item">
+                                    Số 1B Yết Kiêu, quận Hoàn Kiếm.
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+0912555888"
+                                        >0912555888</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 2 -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Hải phòng:</li>
+                                <li class="nav-item">
+                                    Số 176A Tôn Đức Thắng, quận Lê Chân.
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:0912555888"
+                                        >0912555888</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 3 -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Quảng Ninh:</li>
+                                <li class="nav-item">
+                                    Số 19 Cao Xanh, phường Cao Xanh, TP. Hạ Long
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:0912555888"
+                                        >0912555888</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 4  -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Thái Nguyên:</li>
+                                <li class="nav-item">
+                                    Số 111 Lương Ngọc Quyến, TP. Thái Nguyên
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+0912555888"
+                                        >0912555888</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 5  -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Nam Định:</li>
+                                <li class="nav-item">
+                                    Số 125 Hai Bà Trưng, TP. Nam Định.
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+ 0981 374 268"
+                                    >
+                                        0981 374 268</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 6 -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Phú Thọ:</li>
+                                <li class="nav-item">
+                                    Lô 7 – 827 Đại Lộ Hùng Vương, TP. Việt Trì
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+0203 629 6060"
+                                        >0203 629 6060</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 7 -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Hải Dương:</li>
+                                <li class="nav-item">
+                                    Số 32 Hồng Quang, P.Quang Trung, TP Hải
+                                    Dương
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+0912555888"
+                                        >0912555888</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 8 -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Bắc Ninh:</li>
+                                <li class="nav-item">
+                                    Số 20 Ngô Miễn Thiệu, P.Tiền An, TP Bắc Ninh
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+0912555888"
+                                        >0912555888</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer third -->
+                <div class="nav-item">
+                    <h4 class="text-success">Địa chỉ Miền Trung</h4>
+                    <div class="row">
+                        <!-- Footer Address 1 -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Đà Nẵng:</li>
+                                <li class="nav-item">
+                                    Số 223 Nguyễn Văn Linh, quận Thanh Khê
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+02 366 523 966"
+                                        >02 366 523 966</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 2 -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Khánh Hòa:</li>
+                                <li class="nav-item">
+                                    Số 5B, Tòa nhà CT3, Khu đô thị VCN Phước
+                                    Hải, TP. Nha Trang
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+0901 903 866"
+                                        >0901 903 866
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 3 -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Nghệ An:</li>
+                                <li class="nav-item">
+                                    341 Nguyễn Văn Cừ, TP VinhLong
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+02 386 668 168"
+                                        >02 386 668 168</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 4  -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Đắk Lắk:</li>
+                                <li class="nav-item">
+                                    Số 59 Lê Duẩn, TP. Buôn Ma Thuột
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+02 623 686 890 "
+                                        >02 623 686 890</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 5  -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Thanh Hóa:</li>
+                                <li class="nav-item">
+                                    Lô 15 Đội Cung, Trường Thi, TP. Thanh Hóa
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+ 02 376 546 688"
+                                    >
+                                        02 376 546 688</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 6 -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Thừa Thiên Huế:</li>
+                                <li class="nav-item">
+                                    Số 21 Phan Bội Châu, TP. Huế
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+02 346 542 468"
+                                        >02 346 542 468</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 7 -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Bình Định:</li>
+                                <li class="nav-item">
+                                    Số 136 Chương Dương, TP. Quy Nhơn
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+02 566 527 662"
+                                        >02 566 527 662</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 8 -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Gia Lai:</li>
+                                <li class="nav-item">
+                                    Số 01 Đoàn Thị Điểm, TP. Pleiku
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+0869 561 268"
+                                        >0869 561 268</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 9 -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Lâm Đồng:</li>
+                                <li class="nav-item">
+                                    Số 186 Hai Bà Trưng, TP. Đà Lạt
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+0868 435 268"
+                                        >0868 435 268</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 10 -->
+                        <div class="col-lg-6 col-md- mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Bình Thuận:</li>
+                                <li class="nav-item">
+                                    53A Tôn Đức Thắng, P.Hưng Long, Tp. Phan
+                                    Thiết
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+0252 6299 299"
+                                        >0252 6299 299</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 11 -->
+                        <div class="col-lg-6 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Quảng Ngãi:</li>
+                                <li class="nav-item">
+                                    449 Lê Lợi, P. Nghĩa Lộ, Tp. Quảng Ngãi
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+02 556 538 899"
+                                        >02 556 538 899</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer four-->
+                <div class="nav-item">
+                    <h4 class="text-success">Địa chỉ Miền Nam</h4>
+                    <div class="row">
+                        <!-- Footer Address 1 -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">TP.HCM:</li>
+                                <li class="nav-item">
+                                    Tầng 6 – Khu C, Tòa nhà WASECO Số 10 Phổ
+                                    Quang, quận Tân Bình
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 2 -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Cần Thơ:</li>
+                                <li class="nav-item">
+                                    Số 23 đường Trần Phú, P. Cái Khế, Q. Ninh
+                                    Kiều, TP. Cần Thơ
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+0292 6502 777"
+                                        >0292 6502 777
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 3 -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Vũng Tàu:</li>
+                                <li class="nav-item">
+                                    Số 17 Phạm Hồng Thái, TP. Vũng Tàu
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+02 542 210 888"
+                                        >02 542 210 888</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 4  -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Kiên Giang:</li>
+                                <li class="nav-item">
+                                    L4-Căn số 2 Phan Thị Ràng, TP. Rạch Giá
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+02 972 200 168"
+                                        >02 972 200 168</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 5  -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Đồng Tháp:</li>
+                                <li class="nav-item">
+                                    Số 05 Đặng Văn Bình, TP.Cao Lãnh, Tỉnh Đồng
+                                    Tháp
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+ 0277 6277 666"
+                                    >
+                                        0277 6277 666</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 6 -->
+                        <div class="col-lg-6 col-md-12 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Cà Mau:</li>
+                                <li class="nav-item">
+                                    Số 72 Lý Bôn, Phường 4, TP. Cà Mau
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+0290 6269 696"
+                                        >0290 6269 696</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Address 7 -->
+                        <div class="col-lg-6 mb-xl">
+                            <ul class="nav bs-d-block text-white bs-font-sm">
+                                <li class="nav-item">Tiền Giang:</li>
+                                <li class="nav-item">
+                                    Số 39 Huyện Thoại, Phường 1, TP. Mỹ Tho
+                                </li>
+                                <li class="nav-item">
+                                    Hotline:
+                                    <a
+                                        class="nav-link-hotline"
+                                        href="tel:+02 736 567 567"
+                                        >02 736 567 567</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="footer-copyright position-relative">
+                <div class="container">
+                    <div class="footer-content">
+                        <a href="#!">
+                            <img
+                                src="./assets/img/DMCA.jpg"
+                                alt="img-pro"
+                                class="img-pro"
+                            />
+                        </a>
+                        <div class="footer-text">
+                            <span class="footer__year">2021 KiotViet™</span>
+                            <span class="footer__times"
+                                >© 2010-2023 Citigo Software. All Right
+                                Reserved</span
+                            >
+                        </div>
+
+                        <div class="footer-social">
+                            <a href="#!" class="img-round">
+                                <i
+                                    class="fa-brands fa-facebook fa-2xl text-gray me-md"
+                                ></i>
+                            </a>
+                            <a href="#!" class="img-round">
+                                <i
+                                    class="fa-brands fa-twitter fa-2xl text-gray me-md"
+                                ></i>
+                            </a>
+                            <a href="#!" class="img-round">
+                                <i
+                                    class="fa-brands fa-youtube fa-2xl text-gray"
+                                ></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

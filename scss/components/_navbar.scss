@@ -1,0 +1,95 @@
+.navbar {
+    // scss-docs-start navbar-css-vars
+    --#{$prefix}navbar-padding-x: #{if(
+            $navbar-padding-x == null,
+            0,
+            $navbar-padding-x
+        )};
+    --#{$prefix}navbar-padding-y: #{$navbar-padding-y};
+    --#{$prefix}navbar-color: #{$navbar-light-color};
+    --#{$prefix}navbar-hover-color: #{$navbar-light-hover-color};
+    --#{$prefix}navbar-disabled-color: #{$navbar-light-disabled-color};
+    --#{$prefix}navbar-active-color: #{$navbar-light-active-color};
+    --#{$prefix}navbar-brand-padding-y: #{$navbar-brand-padding-y};
+    --#{$prefix}navbar-brand-margin-end: #{$navbar-brand-margin-end};
+    --#{$prefix}navbar-brand-font-size: #{$navbar-brand-font-size};
+    --#{$prefix}navbar-brand-color: #{$navbar-light-brand-color};
+    --#{$prefix}navbar-brand-hover-color: #{$navbar-light-brand-hover-color};
+    --#{$prefix}navbar-nav-link-padding-x: #{$navbar-nav-link-padding-x};
+    --#{$prefix}navbar-nav-link-padding-y: #{$navbar-nav-link-padding-y};
+    --#{$prefix}navbar-toggler-padding-y: #{$navbar-toggler-padding-y};
+    --#{$prefix}navbar-toggler-padding-x: #{$navbar-toggler-padding-x};
+    --#{$prefix}navbar-toggler-font-size: #{$navbar-toggler-font-size};
+    --#{$prefix}navbar-toggler-icon-bg: #{escape-svg(
+            $navbar-light-toggler-icon-bg
+        )};
+    --#{$prefix}navbar-toggler-border-color: #{$navbar-light-toggler-border-color};
+    --#{$prefix}navbar-toggler-border-radius: #{$navbar-toggler-border-radius};
+    --#{$prefix}navbar-toggler-focus-width: #{$navbar-toggler-focus-width};
+    --#{$prefix}navbar-toggler-transition: #{$navbar-toggler-transition};
+    // scss-docs-end navbar-css-vars
+
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; // allow us to do the line break for collapsing content
+    align-items: center;
+    justify-content: space-between; // space out brand from logo
+    padding: var(--#{$prefix}navbar-padding-y) var(--#{$prefix}navbar-padding-x);
+
+    %container-flex-properties {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    > .container,
+    > .container-fluid {
+        @extend %container-flex-properties;
+    }
+
+    @each $breakpoint, $container-max-width in $container-max-widths {
+        > .container#{breakpoint-infix($breakpoint, $container-max-widths)} {
+            @extend %container-flex-properties;
+        }
+    }
+}
+
+// Navbar-nav
+
+.navbar-nav {
+    // scss-docs-start navbar-nav-css-vars
+    --#{$prefix}nav-link-padding-x: #{$nav-link-padding-x};
+    --#{$prefix}nav-link-padding-y: #{$nav-link-padding-y};
+    --#{$prefix}nav-link-font-size: #{$nav-link-font-size};
+    --#{$prefix}navbar-bg-color: #{$navbar-bg-color};
+    --#{$prefix}navbar-link-border-radius: #{$navbar-link-border-radius};
+    --#{$prefix}nav-link-font-weight: #{$nav-link-font-weight};
+    --#{$prefix}nav-link-color: var(--#{$prefix}navbar-color);
+    --#{$prefix}nav-link-hover-color: var(--#{$prefix}navbar-hover-color);
+    --#{$prefix}nav-link-disabled-color: var(--#{$prefix}navbar-disabled-color);
+
+    // scss-docs-end navbar-nav-css-vars
+
+    display: flex;
+    flex-direction: column; // cannot use `inherit` to get the `.navbar`s value
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+    .nav-link {
+        border-radius: var(--#{$prefix}navbar-link-border-radius);
+        &:hover {
+            border-radius: var(--#{$prefix}navbar-link-border-radius);
+            background-color: var(--#{$prefix}navbar-bg-color);
+        }
+        &.active,
+        &.show {
+            color: var(--#{$prefix}navbar-active-color);
+        }
+    }
+
+    .dropdown-menu {
+        position: static;
+    }
+}
