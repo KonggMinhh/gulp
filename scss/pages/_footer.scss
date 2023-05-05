@@ -19,7 +19,7 @@
         color: var(--#{$var-prefix}white);
         font-weight: var(--#{$var-prefix}font-weight-regular);
         &:hover {
-            color: var(--#{$var-prefix}link-hover-color);
+            color: #237fcd;
         }
     }
     &-copyright {

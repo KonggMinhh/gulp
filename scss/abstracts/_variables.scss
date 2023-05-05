@@ -324,7 +324,7 @@ $zindex-bottom: $zindex-middle - 1;
 
 //----- Links -------------------------------------------------
 $link-color: $link-color;
-$link-hover-color: $link-color;
+$link-hover-color: #237fcd;
 $link-decoration: underline;
 $link-hover-decoration: null;
 
@@ -736,28 +736,49 @@ $navbar-toggler-border-radius: $btn-border-radius;
 $navbar-toggler-focus-width: 0.25rem;
 $navbar-toggler-transition: box-shadow 0.15s ease-in-out;
 //===== Card ==========================================
-$card-title-color: var(--#{$var-prefix}body-color);
+$card-box-shadow-property: 0px 9px 32px;
+$card-box-shadow-opacity: 0.06;
 
-$card-spacer-y: $spacer;
-$card-spacer-x: $spacer;
+$card-margin-bottom: 4rem;
 
-$card-spacer-y-sm: $spacer * 2;
-$card-spacer-x-sm: $spacer * 4;
+$card-border-width: $border-width;
 
-$card-spacer-y-md: $spacer * 2;
-$card-spacer-x-md: $spacer * 3;
+$card-font-size-xs: $font-size-sm;
+$card-font-size-sm: $font-size-sm;
+$card-font-size: $font-size;
+$card-font-size-lg: $font-size;
+$card-font-size-xl: $font-size-lg;
+$card-font-size-xxl: $font-size-lg;
 
-$card-spacer-y-lg: $spacer * 10;
-$card-spacer-x-lg: $spacer * 10;
+$card-font-weight: var(--#{$var-prefix}font-weight-regular);
 
-$card-spacer-y-xl: 0;
-$card-spacer-x-xl: $spacer * 15;
+$card-line-height-xs: $line-height-sm;
+$card-line-height-sm: $line-height-sm;
+$card-line-height: $line-height;
+$card-line-height-lg: $line-height;
+$card-line-height-xl: $line-height-lg;
+$card-line-height-xxl: $line-height-xl;
 
-$card-title-spacer-y: $spacer * 4;
+$card-padding-x-xs: 0rem;
+$card-padding-y-xs: 0rem;
+$card-padding-x-sm: 1.9rem;
+$card-padding-y-sm: 1.6rem;
+$card-padding-x: 2rem;
+$card-padding-y: 2rem;
+$card-padding-x-lg: 2.4rem;
+$card-padding-y-lg: 2.4rem;
+$card-padding-x-xl: 3rem;
+$card-padding-y-xl: 3rem;
+$card-padding-x-xxl: 4.3rem;
+$card-padding-y-xxl: 4.3rem;
 
-$card-border-radius: var(--#{$prefix}border-radius);
-$card-border-width: var(--#{$prefix}border-width);
-$card-bg: var(--#{$prefix}body-bg);
-$card-height: 12.5rem;
+$card-img-padding-x: 1.6rem;
+$card-img-padding-y: 1.6rem;
 
-$card-box-shadow: 0px 9px 32px rgba(0, 0, 0, 0.06);
+$card-body-padding-x: 6rem;
+$card-body-padding-y: 0;
+$card-body-padding-y-xs: 0;
+$card-body-padding-x-xs: 0;
+
+$card-border-radius: var(--#{$var-prefix}radius-lg);
+$card-img-border-radius: var(--#{$var-prefix}radius-lg);

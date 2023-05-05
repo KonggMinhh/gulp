@@ -1,0 +1,49 @@
+@mixin card-variant($color) {
+    --#{$var-prefix}card-color: var(--#{$var-prefix}body-color);
+    --#{$var-prefix}card-bg: var(--#{$var-prefix}#{$color});
+    --#{$var-prefix}card-border-color: transparent;
+}
+@mixin card-variant($color) {
+    --#{$var-prefix}card-color: var(--#{$var-prefix}body-color);
+    --#{$var-prefix}card-bg: var(--#{$var-prefix}#{$color});
+    --#{$var-prefix}card-border-color: transparent;
+}
+
+@mixin card-outline-variant($color) {
+    --#{$var-prefix}card-bg: var(--#{$var-prefix}white);
+    --#{$var-prefix}card-border-color: var(--#{$var-prefix}#{$color});
+}
+@mixin card-light-variant($color) {
+    --#{$var-prefix}card-bg: var(--#{$var-prefix}#{$color}-50);
+    --#{$var-prefix}card-border-color: transparent;
+}
+@mixin card-img-light-variant($color) {
+    --#{$var-prefix}card-bg: var(--#{$var-prefix}#{$color}-100);
+    --#{$var-prefix}card-border-color: transparent;
+}
+
+@mixin card-ghost-variant($color) {
+    --#{$var-prefix}card-bg: transparent;
+    --#{$var-prefix}card-border-color: var(--#{$var-prefix}#{$color});
+}
+
+@mixin card-size(
+    $padding-y,
+    $padding-x,
+    $font-size,
+    $line-height,
+    $font-weight,
+    $border-radius
+) {
+    --#{$var-prefix}card-padding-y: #{$padding-y};
+    --#{$var-prefix}card-padding-x: #{$padding-x};
+    --#{$var-prefix}card-font-size: #{$font-size};
+    --#{$var-prefix}card-line-height: #{$line-height};
+    --#{$var-prefix}card-font-weight: #{$font-weight};
+    --#{$var-prefix}card-border-radius: #{$border-radius};
+}
+
+@mixin card-body-size($padding-y, $padding-x) {
+    --#{$var-prefix}card-body-padding-y: #{$padding-y};
+    --#{$var-prefix}card-body-padding-x: #{$padding-x};
+}

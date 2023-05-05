@@ -26,7 +26,7 @@
 @import "components/forms";
 // @import "components/tags";
 // @import "components/badge";
-// @import "components/alert";
+@import "components/alert";
 // @import "components/divider";
 // @import "components/modal";
 // @import "components/avatars";
@@ -40,6 +40,8 @@
 @import "components/card";
 
 //----- 6.Pages -----------------------------------
+
+// Home-page
 @import "pages/header";
 @import "pages/benefit";
 @import "pages/career";
@@ -50,4 +52,7 @@
 @import "pages/blog";
 @import "pages/support";
 @import "pages/footer";
+
+// Register-page
+@import "pages/register";
 //----- 7.Others ----------------------------------

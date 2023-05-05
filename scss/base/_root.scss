@@ -1,15 +1,14 @@
 :root {
-    //----- Colors -----------------------------------
-    // @each $color, $value in color-map("demo", #f00) {
-    //   --#{$var-prefix}#{$color}: #{$value};
-    // }
+    // ----- Colors -----------------------------------
+    @each $color, $value in color-map("demo", #f00) {
+        --#{$var-prefix}#{$color}: #{$value};
+    }
 
     @each $color, $value in color-multi-map($theme-colors) {
-
-      --#{$var-prefix}#{$color}: #{$value};
+        --#{$var-prefix}#{$color}: #{$value};
     }
     @each $color, $value in color-map("link", $link-color) {
-      --#{$var-prefix}#{$color}: #{$value};
+        --#{$var-prefix}#{$color}: #{$value};
     }
 
     --#{$var-prefix}white: #{$white};
@@ -20,24 +19,28 @@
     //----- Sizes ------------------------------------
 
     @each $type, $value in $types {
-      --#{$var-prefix}font-size-#{$type}: #{inspect(map-get(map-get($types, '#{$type}'), font-size))};
-      --#{$var-prefix}line-height-#{$type}: #{inspect(map-get(map-get($types, '#{$type}'), line-height))};
+        --#{$var-prefix}font-size-#{$type}: #{inspect(
+                map-get(map-get($types, "#{$type}"), font-size)
+            )};
+        --#{$var-prefix}line-height-#{$type}: #{inspect(
+                map-get(map-get($types, "#{$type}"), line-height)
+            )};
     }
 
     @each $size, $value in $box-sizes {
-      --#{$var-prefix}size-#{$size}: #{$value};
+        --#{$var-prefix}size-#{$size}: #{$value};
     }
 
     @each $size, $value in $icon-sizes {
-      --#{$var-prefix}icon-size-#{$size}: #{$value};
+        --#{$var-prefix}icon-size-#{$size}: #{$value};
     }
 
     @each $size, $value in $radius-sizes {
-      --#{$var-prefix}radius-#{$size}: #{$value};
+        --#{$var-prefix}radius-#{$size}: #{$value};
     }
 
     @each $spacer, $value in $spacers {
-      --#{$var-prefix}spacer-#{$spacer}: #{$value};
+        --#{$var-prefix}spacer-#{$spacer}: #{$value};
     }
 
     //----- Font-weight ------------------------------

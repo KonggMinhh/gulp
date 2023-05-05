@@ -80,6 +80,7 @@
     .nav-link {
         border-radius: var(--#{$prefix}navbar-link-border-radius);
         &:hover {
+            color: $green;
             border-radius: var(--#{$prefix}navbar-link-border-radius);
             background-color: var(--#{$prefix}navbar-bg-color);
         }

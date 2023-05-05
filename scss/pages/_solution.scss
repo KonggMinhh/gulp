@@ -1,11 +1,5 @@
 .solution {
     padding: 8rem 0;
-    &-thumb {
-        width: 100%;
-        height: 100%;
-        max-width: 100%;
-        object-fit: cover;
-    }
 }
 .card-content {
     @include media-breakpoint-down(xl) {
