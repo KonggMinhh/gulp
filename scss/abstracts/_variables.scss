@@ -739,6 +739,8 @@ $navbar-toggler-transition: box-shadow 0.15s ease-in-out;
 $card-box-shadow-property: 0px 9px 32px;
 $card-box-shadow-opacity: 0.06;
 
+$card-color: var(--#{$var-prefix}body-color);
+
 $card-margin-bottom: 4rem;
 
 $card-border-width: $border-width;
@@ -781,4 +783,3 @@ $card-body-padding-y-xs: 0;
 $card-body-padding-x-xs: 0;
 
 $card-border-radius: var(--#{$var-prefix}radius-lg);
-$card-img-border-radius: var(--#{$var-prefix}radius-lg);

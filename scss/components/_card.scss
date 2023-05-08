@@ -6,12 +6,11 @@
     --#{$var-prefix}card-font-size: #{$card-font-size};
     --#{$var-prefix}card-line-height: #{$card-line-height};
     --#{$var-prefix}card-font-weight: #{$card-font-weight};
-    --#{$var-prefix}card-color: var(--#{$var-prefix}body-color);
+    --#{$var-prefix}card-color: #{$card-color};
     --#{$var-prefix}card-bg: transparent;
     --#{$var-prefix}card-border-width: #{$card-border-width};
     --#{$var-prefix}card-border-color: transparent;
     --#{$var-prefix}card-border-radius: #{$card-border-radius};
-    --#{$var-prefix}card-size: #{$card-height};
     --#{$var-prefix}card-box-shadow: #{$card-box-shadow-property} rgba(var(--#{$var-prefix}gray-rgb), #{$card-box-shadow-opacity});
 
     position: relative;
@@ -29,42 +28,87 @@
     border: var(--#{$var-prefix}card-border-width) solid
         var(--#{$var-prefix}card-border-color);
     @include border-radius(var(--#{$var-prefix}card-border-radius));
-    & ~ & {
-        margin-top: var(--#{$var-prefix}card-margin-bottom);
+    @include media-breakpoint-down(md) {
+        & {
+            margin-bottom: var(--#{$var-prefix}card-margin-bottom);
+        }
+    }
+    @include media-breakpoint-up(md) {
+        & {
+            margin-bottom: var(--#{$var-prefix}card-margin-bottom);
+        }
     }
 }
-
+%card-horizontal {
+    @include media-breakpoint-up(md) {
+        & {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+}
+%card-row-reverse {
+    @include media-breakpoint-up(md) {
+        & {
+            flex-direction: row-reverse;
+        }
+    }
+}
 %card-img {
-    --#{$var-prefix}card-img-padding-x: #{$card-img-padding-x};
-    --#{$var-prefix}card-img-padding-y: #{$card-img-padding-y};
-    --#{$var-prefix}card-img-border-radius: #{$card-img-border-radius};
-    --#{$var-prefix}card-bg: transparent;
-
     display: inline-block;
     width: 100%;
     height: 100%;
     text-align: center;
-    padding: var(--#{$var-prefix}card-img-padding-y)
-        var(--#{$var-prefix}card-img-padding-x);
-    @include border-radius(var(--#{$var-prefix}card-img-border-radius));
+    padding: var(--#{$var-prefix}card-padding-y)
+        var(--#{$var-prefix}card-padding-x);
+    @include border-radius(var(--#{$var-prefix}card-border-radius));
     background-color: var(--#{$var-prefix}card-bg);
 }
 
 %card-body {
-    --#{$var-prefix}card-body-padding-x: #{$card-body-padding-x};
-    --#{$var-prefix}card-body-padding-y: #{$card-body-padding-y};
-
     display: inline-block;
-    padding: var(--#{$var-prefix}card-body-padding-y)
-        var(--#{$var-prefix}card-body-padding-x);
+    padding: var(--#{$var-prefix}card-padding-y)
+        var(--#{$var-prefix}card-padding-x);
 }
 %card-body-xs {
     @include card-body-size($card-body-padding-y-xs, $card-body-padding-x-xs);
 }
+
+%card-p-none {
+    padding: 0;
+}
+%card-heading {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+%card-title {
+    color: var(--#{$var-prefix}card-color);
+    @include line-clamp(3);
+}
+
+%card-desc {
+    @include line-clamp(2);
+    color: var(--#{$var-prefix}card-color);
+}
+
+%card-text {
+    color: var(--#{$var-prefix}card-color);
+}
+
+%card-link {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
 %card-5 {
     flex: 20%;
 }
-
+%card-4 {
+    flex: 25%;
+}
 %card-xs {
     @include card-size(
         $card-padding-y-xs,
@@ -128,6 +172,18 @@
 .#{$class-prefix}card {
     @extend %card;
 }
+.#{$class-prefix}card-horizontal {
+    @extend %card-horizontal;
+}
+.#{$class-prefix}card-row-reverse {
+    @extend %card-row-reverse;
+}
+.#{$class-prefix}card-p-none {
+    @extend %card-p-none;
+}
+.#{$class-prefix}card-4 {
+    @extend %card-4;
+}
 .#{$class-prefix}card-5 {
     @extend %card-5;
 }
@@ -158,9 +214,26 @@
     @extend %card-xxl;
 }
 
-// Card body
 .#{$class-prefix}card-body-xs {
     @extend %card-body-xs;
+}
+.#{$class-prefix}card-heading {
+    @extend %card-heading;
+}
+.#{$class-prefix}card-title {
+    @extend %card-title;
+}
+
+.#{$class-prefix}card-desc {
+    @extend %card-desc;
+}
+
+.#{$class-prefix}card-text {
+    @extend %card-text;
+}
+
+.#{$class-prefix}card-link {
+    @extend %card-link;
 }
 //----- card color -----------------------------------
 
@@ -194,7 +267,4 @@
     .#{$class-prefix}card-img-light-#{$color} {
         @include card-img-light-variant($color);
     }
-}
-.bs-card-title {
-    @include line-clamp(3);
 }
