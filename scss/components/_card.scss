@@ -43,7 +43,6 @@
     @include border-radius(var(--#{$var-prefix}card-border-radius));
     @include media-breakpoint-up(md) {
         --#{$var-prefix}card-margin-y: #{$card-margin-y-sm};
-        // margin-bottom: $card-margin-bottom;
     }
 }
 
@@ -119,8 +118,7 @@
     height: 100%;
     object-fit: cover;
     background-color: var(--#{$var-prefix}card-bg);
-    padding: var(--#{$var-prefix}card-padding-y)
-        var(--#{$var-prefix}card-padding-x);
+    padding: #{$card-padding-y-xs} #{$card-padding-x-xs};
     border-radius: var(--#{$var-prefix}card-border-radius);
 }
 //===== Card Class ===================================

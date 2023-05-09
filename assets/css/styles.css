@@ -15556,7 +15556,7 @@ h6 {
   -o-object-fit: cover;
      object-fit: cover;
   background-color: var(--bs-card-bg);
-  padding: var(--bs-card-padding-y) var(--bs-card-padding-x);
+  padding: 1.6rem 1.9rem;
   border-radius: var(--bs-card-border-radius);
 }
 
