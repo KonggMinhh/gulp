@@ -44,6 +44,16 @@
 }
 
 @mixin card-body-size($padding-y, $padding-x) {
-    --#{$var-prefix}card-body-padding-y: #{$padding-y};
-    --#{$var-prefix}card-body-padding-x: #{$padding-x};
+    --#{$var-prefix}card-padding-y: #{$padding-y};
+    --#{$var-prefix}card-padding-x: #{$padding-x};
 }
+
+@mixin card-horizontal($card-flex, $card-align) {
+    --#{$var-prefix}card-flex: #{$card-flex};
+    --#{$var-prefix}card-align: #{$card-align};
+}
+
+@mixin card-reverse ($card-flex) {
+    --#{$var-prefix}card-flex: #{$card-flex};
+}
+

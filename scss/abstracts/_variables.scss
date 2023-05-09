@@ -739,9 +739,8 @@ $navbar-toggler-transition: box-shadow 0.15s ease-in-out;
 $card-box-shadow-property: 0px 9px 32px;
 $card-box-shadow-opacity: 0.06;
 
+$card-bg: var(--#{$var-prefix}white);
 $card-color: var(--#{$var-prefix}body-color);
-
-$card-margin-bottom: 4rem;
 
 $card-border-width: $border-width;
 
@@ -763,16 +762,23 @@ $card-line-height-xxl: $line-height-xl;
 
 $card-padding-x-xs: 0rem;
 $card-padding-y-xs: 0rem;
+$card-padding-x-xs: 1.9rem;
+$card-padding-y-xs: 1.6rem;
 $card-padding-x-sm: 1.9rem;
 $card-padding-y-sm: 1.6rem;
-$card-padding-x: 2rem;
-$card-padding-y: 2rem;
+$card-padding-x: 0rem;
+$card-padding-y: 0rem;
 $card-padding-x-lg: 2.4rem;
 $card-padding-y-lg: 2.4rem;
 $card-padding-x-xl: 3rem;
 $card-padding-y-xl: 3rem;
-$card-padding-x-xxl: 4.3rem;
-$card-padding-y-xxl: 4.3rem;
+$card-padding-x-xxl: 6rem;
+$card-padding-y-xxl: 0;
+
+$card-margin-x: 0;
+$card-margin-y: 0;
+
+$card-margin-y-sm: 4rem;
 
 $card-img-padding-x: 1.6rem;
 $card-img-padding-y: 1.6rem;
@@ -783,3 +789,14 @@ $card-body-padding-y-xs: 0;
 $card-body-padding-x-xs: 0;
 
 $card-border-radius: var(--#{$var-prefix}radius-lg);
+
+$card-flex-column: column;
+$card-flex-column-reverse: column-reverse;
+$card-flex-row: row;
+$card-flex-row-reverse: row-reverse;
+
+$card-align-center: center;
+$card-align-normal: normal;
+
+$card-justify-center: center;
+$card-justify-normal: normal;

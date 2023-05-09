@@ -2,12 +2,21 @@
 %card {
     --#{$var-prefix}card-padding-x: #{$card-padding-x};
     --#{$var-prefix}card-padding-y: #{$card-padding-y};
-    --#{$var-prefix}card-margin-bottom: #{$card-margin-bottom};
+
+    --#{$var-prefix}card-margin-x: #{$card-margin-x};
+    --#{$var-prefix}card-margin-y: #{$card-margin-y};
+
     --#{$var-prefix}card-font-size: #{$card-font-size};
     --#{$var-prefix}card-line-height: #{$card-line-height};
     --#{$var-prefix}card-font-weight: #{$card-font-weight};
     --#{$var-prefix}card-color: #{$card-color};
-    --#{$var-prefix}card-bg: transparent;
+    --#{$var-prefix}card-bg: #{$card-bg};
+
+    --#{$var-prefix}card-flex: #{$card-flex-column};
+
+    --#{$var-prefix}card-align: #{$card-align-normal};
+    --#{$var-prefix}card-justify: #{$card-justify-normal};
+
     --#{$var-prefix}card-border-width: #{$card-border-width};
     --#{$var-prefix}card-border-color: transparent;
     --#{$var-prefix}card-border-radius: #{$card-border-radius};
@@ -15,100 +24,29 @@
 
     position: relative;
     display: flex;
-    flex-direction: column;
+    justify-content: var(--#{$var-prefix}card-justify);
+    align-items: var(--#{$var-prefix}card-align);
+
+    flex-direction: var(--#{$var-prefix}card-flex);
     padding: var(--#{$var-prefix}card-padding-y)
         var(--#{$var-prefix}card-padding-x);
+    margin: var(--#{$var-prefix}card-margin-y)
+        var(--#{$var-prefix}card-margin-x);
     font-family: var(--#{$var-prefix}body-font-family);
     line-height: var(--#{$var-prefix}card-line-height);
     font-weight: var(--#{$var-prefix}card-font-weight);
-    overflow: hidden;
     color: var(--#{$var-prefix}card-color);
     user-select: none;
     background-color: var(--#{$var-prefix}card-bg);
     border: var(--#{$var-prefix}card-border-width) solid
         var(--#{$var-prefix}card-border-color);
     @include border-radius(var(--#{$var-prefix}card-border-radius));
-    @include media-breakpoint-down(md) {
-        & {
-            margin-bottom: var(--#{$var-prefix}card-margin-bottom);
-        }
-    }
     @include media-breakpoint-up(md) {
-        & {
-            margin-bottom: var(--#{$var-prefix}card-margin-bottom);
-        }
+        --#{$var-prefix}card-margin-y: #{$card-margin-y-sm};
+        // margin-bottom: $card-margin-bottom;
     }
 }
-%card-horizontal {
-    @include media-breakpoint-up(md) {
-        & {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-    }
-}
-%card-row-reverse {
-    @include media-breakpoint-up(md) {
-        & {
-            flex-direction: row-reverse;
-        }
-    }
-}
-%card-img {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    padding: var(--#{$var-prefix}card-padding-y)
-        var(--#{$var-prefix}card-padding-x);
-    @include border-radius(var(--#{$var-prefix}card-border-radius));
-    background-color: var(--#{$var-prefix}card-bg);
-}
 
-%card-body {
-    display: inline-block;
-    padding: var(--#{$var-prefix}card-padding-y)
-        var(--#{$var-prefix}card-padding-x);
-}
-%card-body-xs {
-    @include card-body-size($card-body-padding-y-xs, $card-body-padding-x-xs);
-}
-
-%card-p-none {
-    padding: 0;
-}
-%card-heading {
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-}
-
-%card-title {
-    color: var(--#{$var-prefix}card-color);
-    @include line-clamp(3);
-}
-
-%card-desc {
-    @include line-clamp(2);
-    color: var(--#{$var-prefix}card-color);
-}
-
-%card-text {
-    color: var(--#{$var-prefix}card-color);
-}
-
-%card-link {
-    display: flex;
-    align-items: center;
-    column-gap: 8px;
-}
-%card-5 {
-    flex: 20%;
-}
-%card-4 {
-    flex: 25%;
-}
 %card-xs {
     @include card-size(
         $card-padding-y-xs,
@@ -129,10 +67,6 @@
         $card-font-weight,
         $card-border-radius
     );
-    &:hover {
-        background-color: var(--#{$var-prefix}white);
-        box-shadow: var(--#{$var-prefix}card-box-shadow);
-    }
 }
 
 %card-lg {
@@ -168,6 +102,27 @@
     );
 }
 
+%card-horizontal {
+    @include card-horizontal($card-flex-row, $card-align-center);
+}
+%card-reverse {
+    @include card-reverse($card-flex-row-reverse);
+}
+
+%card-body {
+    @include card-body-size($card-padding-y-xxl, $card-padding-x-xxl);
+    padding: var(--#{$var-prefix}card-padding-y)
+        var(--#{$var-prefix}card-padding-x);
+}
+%card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--#{$var-prefix}card-bg);
+    padding: var(--#{$var-prefix}card-padding-y)
+        var(--#{$var-prefix}card-padding-x);
+    border-radius: var(--#{$var-prefix}card-border-radius);
+}
 //===== Card Class ===================================
 .#{$class-prefix}card {
     @extend %card;
@@ -175,24 +130,16 @@
 .#{$class-prefix}card-horizontal {
     @extend %card-horizontal;
 }
-.#{$class-prefix}card-row-reverse {
-    @extend %card-row-reverse;
-}
-.#{$class-prefix}card-p-none {
-    @extend %card-p-none;
-}
-.#{$class-prefix}card-4 {
-    @extend %card-4;
-}
-.#{$class-prefix}card-5 {
-    @extend %card-5;
-}
-.#{$class-prefix}card-img {
-    @extend %card-img;
+.#{$class-prefix}card-reverse {
+    @extend %card-reverse;
 }
 .#{$class-prefix}card-body {
     @extend %card-body;
 }
+.#{$class-prefix}card-img {
+    @extend %card-img;
+}
+
 //===== Card size ===================================
 .#{$class-prefix}card-xs {
     @extend %card-xs;
@@ -214,28 +161,7 @@
     @extend %card-xxl;
 }
 
-.#{$class-prefix}card-body-xs {
-    @extend %card-body-xs;
-}
-.#{$class-prefix}card-heading {
-    @extend %card-heading;
-}
-.#{$class-prefix}card-title {
-    @extend %card-title;
-}
-
-.#{$class-prefix}card-desc {
-    @extend %card-desc;
-}
-
-.#{$class-prefix}card-text {
-    @extend %card-text;
-}
-
-.#{$class-prefix}card-link {
-    @extend %card-link;
-}
-//----- card color -----------------------------------
+//----- Card color -----------------------------------
 
 @each $color, $value in $theme-colors {
     %card-#{$color},
