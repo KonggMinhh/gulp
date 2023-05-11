@@ -17,11 +17,6 @@
     --#{$var-prefix}card-bg: var(--#{$var-prefix}#{$color}-50);
     --#{$var-prefix}card-border-color: transparent;
 }
-@mixin card-img-light-variant($color) {
-    --#{$var-prefix}card-bg: var(--#{$var-prefix}#{$color}-100);
-    --#{$var-prefix}card-border-color: transparent;
-}
-
 @mixin card-ghost-variant($color) {
     --#{$var-prefix}card-bg: transparent;
     --#{$var-prefix}card-border-color: var(--#{$var-prefix}#{$color});
@@ -43,17 +38,11 @@
     --#{$var-prefix}card-border-radius: #{$border-radius};
 }
 
-@mixin card-body-size($padding-y, $padding-x) {
-    --#{$var-prefix}card-padding-y: #{$padding-y};
-    --#{$var-prefix}card-padding-x: #{$padding-x};
+@mixin card-hover(
+    $background,
+    $card-box-shadow-property,
+    $card-box-shadow-opacity
+) {
+    --#{$var-prefix}card-hover-bg: #{$card-hover-bg};
+    --#{$var-prefix}card-box-shadow: #{$card-box-shadow-property} rgba(var(--#{$var-prefix}gray-rgb), #{$card-box-shadow-opacity});
 }
-
-@mixin card-horizontal($card-flex, $card-align) {
-    --#{$var-prefix}card-flex: #{$card-flex};
-    --#{$var-prefix}card-align: #{$card-align};
-}
-
-@mixin card-reverse ($card-flex) {
-    --#{$var-prefix}card-flex: #{$card-flex};
-}
-

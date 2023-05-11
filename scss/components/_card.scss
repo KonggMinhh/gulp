@@ -9,7 +9,9 @@
     --#{$var-prefix}card-font-size: #{$card-font-size};
     --#{$var-prefix}card-line-height: #{$card-line-height};
     --#{$var-prefix}card-font-weight: #{$card-font-weight};
+
     --#{$var-prefix}card-color: #{$card-color};
+    --#{$var-prefix}card-hover-bg: #{$card-hover-bg};
     --#{$var-prefix}card-bg: #{$card-bg};
 
     --#{$var-prefix}card-flex: #{$card-flex-column};
@@ -26,12 +28,12 @@
     display: flex;
     justify-content: var(--#{$var-prefix}card-justify);
     align-items: var(--#{$var-prefix}card-align);
-
     flex-direction: var(--#{$var-prefix}card-flex);
     padding: var(--#{$var-prefix}card-padding-y)
         var(--#{$var-prefix}card-padding-x);
     margin: var(--#{$var-prefix}card-margin-y)
         var(--#{$var-prefix}card-margin-x);
+    font-size: var(--#{$var-prefix}card-font-size);
     font-family: var(--#{$var-prefix}body-font-family);
     line-height: var(--#{$var-prefix}card-line-height);
     font-weight: var(--#{$var-prefix}card-font-weight);
@@ -41,9 +43,7 @@
     border: var(--#{$var-prefix}card-border-width) solid
         var(--#{$var-prefix}card-border-color);
     @include border-radius(var(--#{$var-prefix}card-border-radius));
-    @include media-breakpoint-up(md) {
-        --#{$var-prefix}card-margin-y: #{$card-margin-y-sm};
-    }
+
 }
 
 %card-xs {
@@ -100,33 +100,153 @@
         $card-border-radius
     );
 }
-
+%card-center {
+    --#{$var-prefix}card-align: #{$card-align-center};
+}
 %card-horizontal {
-    @include card-horizontal($card-flex-row, $card-align-center);
+    @include media-breakpoint-up(lg) {
+        --#{$var-prefix}card-flex: #{$card-flex-row};
+    }
+}
+
+%card-customer {
+    --#{$var-prefix}card-flex: #{$card-flex-row};
+    --#{$var-prefix}card-margin-y: #{$card-margin-y-sm};
+}
+%card-blog {
+    --#{$var-prefix}card-flex: #{$card-flex-row};
 }
 %card-reverse {
-    @include card-reverse($card-flex-row-reverse);
+    @include media-breakpoint-up(lg) {
+        --#{$var-prefix}card-flex: #{$card-flex-row-reverse};
+    }
 }
 
 %card-body {
-    @include card-body-size($card-padding-y-xxl, $card-padding-x-xxl);
+    --#{$var-prefix}card-padding-x: #{$card-padding-x};
+    --#{$var-prefix}card-padding-y: #{$card-padding-y};
+    --#{$var-prefix}card-margin-y: #{$card-margin-y};
+    --#{$var-prefix}card-margin-x: #{$card-margin-x};
+    --#{$var-prefix}card-color: #{$card-color};
+
+    color: var(--#{$var-prefix}card-color);
     padding: var(--#{$var-prefix}card-padding-y)
         var(--#{$var-prefix}card-padding-x);
+    margin: var(--#{$var-prefix}card-margin-y)
+        var(--#{$var-prefix}card-margin-x);
+}
+%card-body-xl {
+    --#{$var-prefix}card-padding-x: #{$card-padding-x-xl};
+    --#{$var-prefix}card-padding-y: #{$card-padding-y-xl};
+}
+%card-body-xs {
+    --#{$var-prefix}card-padding-x: #{$card-padding-x-xs};
+}
+%card-body-lg {
+    --#{$var-prefix}card-padding-x: #{$card-padding-x-lg};
+    --#{$var-prefix}card-padding-y: #{$card-padding-y-lg};
 }
 %card-img {
+    --#{$var-prefix}card-justify: #{$card-justify-normal};
+
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: var(--#{$var-prefix}card-justify);
     object-fit: cover;
     background-color: var(--#{$var-prefix}card-bg);
     padding: #{$card-padding-y-xs} #{$card-padding-x-xs};
     border-radius: var(--#{$var-prefix}card-border-radius);
 }
+%card-img-sm {
+    width: 175px;
+    height: 94px;
+    padding: #{$card-padding-y} #{$card-padding-x};
+}
+%card-img-center {
+    --#{$var-prefix}card-justify: #{$card-justify-center};
+}
+%card-text {
+    --#{$var-prefix}card-text: #{$card-text-normal};
+    --#{$var-prefix}card-font-size: #{$card-font-size};
+    --#{$var-prefix}card-font-weight: #{$card-font-weight};
+    --#{$var-prefix}card-margin-y: #{$card-margin-y};
+    --#{$var-prefix}card-margin-x: #{$card-margin-x};
+
+    text-align: var(--#{$var-prefix}card-text);
+    margin: var(--#{$var-prefix}card-margin-y)
+        var(--#{$var-prefix}card-margin-x);
+    font-size: var(--#{$var-prefix}card-font-size);
+    font-weight: var(--#{$var-prefix}card-font-weight);
+}
+%card-text-center {
+    --#{$var-prefix}card-text: #{$card-text-center};
+}
+%card-title {
+    --#{$var-prefix}card-color: #{$card-color};
+    color: var(--#{$var-prefix}card-color);
+    @include line-clamp(3);
+}
+%card-desc {
+    @include line-clamp(2);
+}
+%card-link {
+    --#{$var-prefix}card-align: #{$card-align-center};
+    --#{$var-prefix}card-color: #{$link-color};
+    --#{$var-prefix}card-gap: #{$card-gap};
+    --#{$var-prefix}card-font-weight: #{$card-font-weight-semibold};
+    --#{$var-prefix}card-margin-y: #{$card-margin-y-sm};
+
+    display: flex;
+    align-items: var(--#{$var-prefix}card-align);
+    column-gap: var(--#{$var-prefix}card-gap);
+    color: var(--#{$var-prefix}card-color);
+    margin: var(--#{$var-prefix}card-margin-y)
+        var(--#{$var-prefix}card-margin-x);
+    font-weight: var(--#{$var-prefix}card-font-weight);
+}
+
+%card-hover {
+    &:hover {
+        @include card-hover(
+            $card-hover-bg,
+            $card-box-shadow-property,
+            $card-box-shadow-opacity
+        );
+        background-color: var(--#{$var-prefix}card-hover-bg);
+        box-shadow: var(--#{$var-prefix}card-box-shadow);
+    }
+}
+%card-margin-xs {
+    --#{$var-prefix}card-margin-y: #{$card-margin-y-xs};
+}
+%card-margin-sm {
+    --#{$var-prefix}card-margin-y: #{$card-margin-y-sm};
+}
+%card-margin-md {
+    @include media-breakpoint-down(lg) {
+        --#{$var-prefix}card-margin-y: #{$card-margin-y-md};
+    }
+}
+%card-margin-xl {
+    --#{$var-prefix}card-margin-y: #{$card-margin-y-xl};
+}
 //===== Card Class ===================================
 .#{$class-prefix}card {
     @extend %card;
 }
+.#{$class-prefix}card-center {
+    @extend %card-center;
+}
 .#{$class-prefix}card-horizontal {
     @extend %card-horizontal;
+}
+
+.#{$class-prefix}card-customer {
+    @extend %card-customer;
+}
+.#{$class-prefix}card-blog {
+    @extend %card-blog;
 }
 .#{$class-prefix}card-reverse {
     @extend %card-reverse;
@@ -134,10 +254,54 @@
 .#{$class-prefix}card-body {
     @extend %card-body;
 }
+.#{$class-prefix}card-body-xl {
+    @extend %card-body-xl;
+}
+.#{$class-prefix}card-body-xs {
+    @extend %card-body-xs;
+}
+.#{$class-prefix}card-body-lg {
+    @extend %card-body-lg;
+}
+.#{$class-prefix}card-text {
+    @extend %card-text;
+}
+.#{$class-prefix}card-text-center {
+    @extend %card-text-center;
+}
+.#{$class-prefix}card-title {
+    @extend %card-title;
+}
+.#{$class-prefix}card-link {
+    @extend %card-link;
+}
+.#{$class-prefix}card-desc {
+    @extend %card-desc;
+}
 .#{$class-prefix}card-img {
     @extend %card-img;
 }
-
+.#{$class-prefix}card-img-sm {
+    @extend %card-img-sm;
+}
+.#{$class-prefix}card-img-center {
+    @extend %card-img-center;
+}
+.#{$class-prefix}card-hover {
+    @extend %card-hover;
+}
+.#{$class-prefix}card-margin-xs {
+    @extend %card-margin-xs;
+}
+.#{$class-prefix}card-margin-sm {
+    @extend %card-margin-sm;
+}
+.#{$class-prefix}card-margin-md {
+    @extend %card-margin-md;
+}
+.#{$class-prefix}card-margin-xl {
+    @extend %card-margin-xl;
+}
 //===== Card size ===================================
 .#{$class-prefix}card-xs {
     @extend %card-xs;
@@ -186,9 +350,5 @@
     %card-light-#{$color},
     .#{$class-prefix}card-light-#{$color} {
         @include card-light-variant($color);
-    }
-    %card-img-light-#{$color},
-    .#{$class-prefix}card-img-light-#{$color} {
-        @include card-img-light-variant($color);
     }
 }
